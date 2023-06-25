@@ -10,6 +10,20 @@ O código desenvolvido durante o capítulo de introdução foi alterado e foi pr
         Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel02/bug-fixes-01">aqui</a> para ver o código.
     </li>
     <li>
-        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel02/bug-fixes-01/index.html">aqui</a> para vê-lo no github-pages.
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel02/bug-fixes-01/">aqui</a> para vê-lo no github-pages.
+    </li>
+<ul>
+
+<hr>
+
+## Stage 02, Desafio Extra - Recriando Layout
+
+Nesse desafio foi recriada uma aplicação a partir de um layout totalmente pronto para fortalecer os conceitos aprendidos nas últimas aulas.
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel02/projeto01-extra">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel02/projeto01-extra">aqui</a> para vê-lo no github-pages.
     </li>
 <ul>
