@@ -1,2 +1,3 @@
-# explorer-desafios
-Repositório para subir os desafios do Explorer - RocketSeat.
+# Desafios
+
+O repositório será atualizado conforme os desafios forem cumpridos.
