@@ -61,6 +61,19 @@ a {
     color: #3F3D56;
     font-size: 15px;
     font-weight: 700;
-    line-height: 147.682%;
     text-decoration: none;
+}
+
+a:nth-child(2) {
+    margin: 0px 42px;
+}
+
+#img-wave {
+    margin: 0;
+    width: 1918px;
+    max-height: 104px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
