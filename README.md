@@ -12,7 +12,7 @@ O código desenvolvido durante o capítulo de introdução foi alterado e foi pr
     <li>
         Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel02/bug-fixes-01/">aqui</a> para vê-lo no github-pages.
     </li>
-<ul>
+</ul>
 
 <hr>
 
