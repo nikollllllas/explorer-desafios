@@ -10,18 +10,22 @@
     max-width: 1080px;
 }
 
-header {
+nav {
     margin-bottom: 55px;
 }
 
-header, 
+nav, 
 ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav ul {
+ul {
     list-style: none;
     gap: 48px;
+}
+
+a {
+    text-decoration: none;
 }
