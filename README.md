@@ -28,6 +28,8 @@ Nesse desafio foi recriada uma aplicação a partir de um layout totalmente pron
     </li>
 </ul>
 
+<hr>
+
 ## Stage 02, Desafio 02 - Recriando Layout
 
 Nesse desafio foi recriada uma aplicação a partir de um layout totalmente pronto para fortalecer os conceitos aprendidos nas últimas aulas além de alguns novos que foram apresentados.
