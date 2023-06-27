@@ -69,3 +69,17 @@ O código desenvolvido durante o segundo capítulo foi alterado foi alterado par
         Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel02/projeto02-intermediario/">aqui</a> para vê-lo no github-pages.
     </li>
 </ul>
+
+<hr>
+
+## Stage 02, Desafio 02 - Avançado
+
+Foi proposto um desafio usando os conceitos básicos de HTML e CSS aprendidos durante o <strong>Stage 02</strong>. Consistia em recriar uma landing page da Rocket.sect, uma empresa de segurança da informação.
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel02/projeto02-avancado">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel02/projeto02-avancado/">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
