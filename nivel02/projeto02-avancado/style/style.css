@@ -67,7 +67,7 @@ p {
 }
 
 #line {
-    margin: auto;
+    margin: 0px auto 27px;
     max-width: 560px;
     border-top: 1px solid #00BFA6;
 }
