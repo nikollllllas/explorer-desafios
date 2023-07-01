@@ -12,131 +12,136 @@
             <h1>Crie e compartilhe seu evento.</h1>
             <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
         </header>
-        <form
-            action="">
+        <form>
             <fieldset>
-                <legend>Informações do Evento</legend>
-                <label
-                    for="id-event-title">
-                    Título do evento <span>(mínimo 8 caracteres)</span>
-                </label>
-                <input
-                    type="text"
-                    name="event-title"
-                    id="id-event-title"
-                    minlength="8"/>
-                <label
-                    for="id-event-url">
-                    Link do evento <span>(comece com https://)</span>
-                </label>
-                <input
-                    type="url"
-                    name="event-url"
-                    id="id-event-url"/>
-                <label
-                    for="id-event-contact">
-                    Whatsapp para contato <span>(somente números, incluir ddd)</span>
-                </label>
-                <input
-                    type="number"
-                    name="event-contact"
-                    id="id-event-contact"
-                    minlength="11"/>
-                <label
-                    for="id-event-extra">
-                Informações extras
-                </label>
-                <input
-                    type="text"
-                    name="event-extra"
-                    id="id-event-extra"/>
-                
-                <label
-                    for="">
-                    Categoria
-                </label>
-                <select
-                    name="event-type"
-                    id="id-event-type">
-                    <option
-                        value="null">
-                        Tipo do Evento
-                    </option>
-                    <option
-                        value="Casamento">
-                        Casamento
-                    </option>
-                    <option
-                        value="Baile de Formatura">
-                        Baile de Formatura
-                    </option>
-                    <option
-                        value="Festa de Família">
-                        Festa de Família
-                    </option>
-                    <option
-                        value="Bodas de Casamento">
-                        Bodas de Casamento
-                    </option>
-                </select>
+                <div class="input-wrapper">
+                    <legend>Informações do Evento</legend>
+                    <label
+                        for="id-event-title">
+                        Título do evento <span>(mínimo 8 caracteres)</span>
+                    </label>
+                    <input
+                        type="text"
+                        name="event-title"
+                        id="id-event-title"
+                        minlength="8"/>
+                    <label
+                        for="id-event-url">
+                        Link do evento <span>(comece com https://)</span>
+                    </label>
+                    <input
+                        type="url"
+                        name="event-url"
+                        id="id-event-url"/>
+                    <label
+                        for="id-event-contact">
+                        Whatsapp para contato <span>(somente números, incluir ddd)</span>
+                    </label>
+                    <input
+                        type="number"
+                        name="event-contact"
+                        id="id-event-contact"
+                        minlength="11"/>
+                    <label
+                        for="id-event-extra">
+                    Informações extras
+                    </label>
+                    <input
+                        type="text"
+                        name="event-extra"
+                        id="id-event-extra"/>
+                    
+                    <label
+                        for="">
+                        Categoria
+                    </label>
+                    <select
+                        name="event-type"
+                        id="id-event-type">
+                        <option
+                            value="null">
+                            Tipo do Evento
+                        </option>
+                        <option
+                            value="Casamento">
+                            Casamento
+                        </option>
+                        <option
+                            value="Baile de Formatura">
+                            Baile de Formatura
+                        </option>
+                        <option
+                            value="Festa de Família">
+                            Festa de Família
+                        </option>
+                        <option
+                            value="Bodas de Casamento">
+                            Bodas de Casamento
+                        </option>
+                    </select>
+                </div>
             </fieldset>
             <fieldset>
-                <legend>Privacidade</legend>
-                <label
-                    for="id-event-adm-email">
-                    E-mail do admnistrador <span>(digite um email válido)</span>
-                </label>
-                <input
-                    type="email"
-                    name="event-adm-email"
-                    id="id-event-adm-email"/>
-                <label
-                    for="id-event-guest-password">
-                    Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span>
-                </label>
-                <input
-                    type="password"
-                    name="event-guest-password"
-                    id="id-event-guest-password"/>
-                <input
-                    type="checkbox"
-                    name="event-privacity"
-                    id="id-event-privacity"/>
-                <label
-                    for="id-event-privacity">
-                    Evento privado
-                </label>
+                <div class="input-wrapper">
+                    <legend>Privacidade</legend>
+                    <label
+                        for="id-event-adm-email">
+                        E-mail do admnistrador <span>(digite um email válido)</span>
+                    </label>
+                    <input
+                        type="email"
+                        name="event-adm-email"
+                        id="id-event-adm-email"/>
+                    <label
+                        for="id-event-guest-password">
+                        Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span>
+                    </label>
+                    <input
+                        type="password"
+                        name="event-guest-password"
+                        id="id-event-guest-password"/>
+                    <input
+                        type="checkbox"
+                        name="event-privacity"
+                        id="id-event-privacity"/>
+                    <label
+                        for="id-event-privacity">
+                        Evento privado
+                    </label>
+                </div>
             </fieldset>
             <fieldset>
-                <legend>Dia e hora</legend>
-                <label
-                    for="id-event-date">
-                    Data
-                </label>
-                <input
-                    type="date"
-                    name="event-date"
-                    id="id-event-date"/>
-                <label
-                    for="id-event-start">
-                    Ínicio:
-                </label>
-                <input
-                    type="datetime"
-                    name="event-start"
-                    id="id-event-start"/>
-                <label
-                    for="id-event-end">
-                    Término:
-                </label>
-                <input
-                    type="datetime"
-                    name="event-end"
-                    id="id-event-end"/>
-            </fieldset>
-            <input
-                type="submit"
-                value="Salvar evento"/>
+                <div class="input-wrapper">
+                    <legend>Dia e hora</legend>
+                    <label
+                        for="id-event-date">
+                        Data
+                    </label>
+                    <input
+                        type="date"
+                        name="event-date"
+                        id="id-event-date"/>
+                    <label
+                        for="id-event-start">
+                        Ínicio:
+                    </label>
+                    <input
+                        type="datetime"
+                        name="event-start"
+                        id="id-event-start"/>
+                    <label
+                        for="id-event-end">
+                        Término:
+                    </label>
+                    <input
+                        type="datetime"
+                        name="event-end"
+                        id="id-event-end"/>
+                                </fieldset>
+                                <input
+                    type="submit"
+                    value="Salvar evento"/>
+                </div>
         </form>
     </div>
 </body>
