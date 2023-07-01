@@ -143,3 +143,8 @@ select {
     background-repeat: no-repeat;
     background-position: right 24px top 50%;
 }
+
+.date-time-wrapper {
+    display: flex;
+    gap: 20px;
+}
