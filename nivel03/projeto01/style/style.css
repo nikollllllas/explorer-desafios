@@ -11,11 +11,6 @@ font-family: 'Poppins', sans-serif;
     padding: 0px;
 }
 
-header {
-    margin: auto;
-    width: 736px;
-}
-
 body {
     background-color: #E5E5E5;
 }
@@ -31,6 +26,36 @@ body::before {
     background-color: #121214;
 
     z-index: -1;
+}
+
+.page {
+    margin: auto;
+    width: 736px;
+}
+
+header {
+    margin-top: 39px;
+    width: 319px;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 36px;
+    line-height: 42px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+}
+
+form {
+    margin-top: 38px;
+    padding: 64px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;    
+    min-height: 900px;
+    border-radius: 8px;
+    background-color: #FAFAFC;
 }
 
 h2 {
