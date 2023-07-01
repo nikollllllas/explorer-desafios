@@ -12,7 +12,8 @@
             <h1>Crie e compartilhe seu evento.</h1>
             <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
         </header>
-        <form>
+        <form
+            id="submit-form">
             <fieldset>
                 <div class="fieldset-wrapper">
                     <legend>Informações do Evento</legend>
@@ -25,6 +26,7 @@
                             type="text"
                             name="event-title"
                             id="id-event-title"
+                            required
                             minlength="8"/>
                     </div>
                     <div class="input-wrapper">
@@ -35,7 +37,8 @@
                         <input
                             type="url"
                             name="event-url"
-                            id="id-event-url"/>
+                            id="id-event-url"
+                            required/>
                     </div>
                     <div class="input-wrapper">
                         <label
@@ -46,14 +49,19 @@
                             type="number"
                             name="event-contact"
                             id="id-event-contact"
-                            minlength="11"/>
+                            minlength="11"
+                            required/>
                     </div>
                     <div class="input-wrapper">
                         <label
                             for="id-event-extra">
-                        Informações extras
+                            Informações extras
                         </label>
-                        <textarea name="" id="" cols="30" rows="10">
+                        <textarea
+                            name="event-extra"
+                            id="id-event-extra"
+                            cols="30"
+                            rows="10">
                             
                         </textarea>
                     </div>
@@ -64,7 +72,8 @@
                         </label>
                         <select
                             name="event-type"
-                            id="id-event-type">
+                            id="id-event-type"
+                            required>
                             <option
                                 value="null">
                                 Tipo do Evento
@@ -100,7 +109,8 @@
                         <input
                             type="email"
                             name="event-adm-email"
-                            id="id-event-adm-email"/>
+                            id="id-event-adm-email"
+                            required/>
                     </div>
                     <div class="input-wrapper">
                         <label
@@ -110,7 +120,8 @@
                         <input
                             type="password"
                             name="event-guest-password"
-                            id="id-event-guest-password"/>
+                            id="id-event-guest-password"
+                            required/>
                     </div>
                     <div class="checkbox-wrapper">
                         <input
@@ -136,7 +147,8 @@
                             <input
                                 type="date"
                                 name="event-date"
-                                id="id-event-date"/>
+                                id="id-event-date"
+                                required/>
                         </div>
                         <div class="input-wrapper">
                             <label
@@ -146,11 +158,13 @@
                             <input
                                 type="time"
                                 name="event-start"
-                                id="id-event-start"/>
+                                id="id-event-start"
+                                required/>
                         </div>
                         <div class="input-wrapper">
                             <label
-                                for="id-event-end">
+                                for="id-event-end"
+                                required>
                                 Término:
                             </label>
                             <input
@@ -162,9 +176,11 @@
                 </div>
             </fieldset>
         </form>
-        <footer class="form-buttons">
+        <footer
+            class="form-buttons">
             <input
                 type="submit"
+                form="submit-form"
                 value="Salvar evento"/>
         </footer>
     </div>
