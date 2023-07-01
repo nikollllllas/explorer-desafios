@@ -148,3 +148,7 @@ select {
     display: flex;
     gap: 20px;
 }
+
+.date-time-wrapper > div:nth-child(1) {
+    width: 100%;
+}
