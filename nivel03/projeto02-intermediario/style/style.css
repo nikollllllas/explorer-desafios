@@ -1,1 +1,150 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
+
+/*
+Fontes: 
+font-family: 'Poppins', sans-serif;
+font-family: 'Staatliches', cursive;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Staatliches', cursive;
+}
+
+body {
+    background: #EFEFEF;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 436px;
+    background-color: #535971;
+
+    z-index: -1;
+}
+
+.page {
+    margin: auto;
+    width: 736px;
+}
+
+header {
+    margin: 140px 0px 58px 0px;
+    width: 417px;
+
+    color: #FFF;
+    font-weight: 400;
+}
+
+header h1 {
+    margin-bottom: 18px;
+    font-size: 48px;
+}
+
+header p {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    padding: 64px;
+    background: #FFF;
+
+    border-radius: 20px 20px 0px 0px;
+}
+
+.fieldset-wrapper {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+fieldset {
+    border: none;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    padding-bottom: 16px;
+    color: #535971;
+    
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+
+    border-bottom: 1px solid #E6E6F0;
+}
+
+h2 {
+    color: #535971;
+    
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+label {
+    color: #4E4958;
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+label span {
+    color: #C1BCCC;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+input {
+    padding: 12px;
+    height: 56px;
+
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+}
+
+footer {
+    margin-bottom: 20px;
+    height: 160px;
+    border-radius: 0px 0px 20px 20px;
+    background: #535971;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type="submit"] {
+    margin: 0px 71px;
+    padding: 15px 40px;
+    color: #FFF;
+
+    background: #FF5374;
+    border: none;
+    border-radius: 20px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+}
