@@ -2,7 +2,9 @@
 
 O repositório foi criado com o intuito de hospedar os desafios criados durante o Explorer e será atualizado conforme os desafios forem cumpridos.
 
-## Stage 02, Desafio 01 - Corrigindo Bugs
+## Stage 02
+
+### Desafio 01 - Corrigindo Bugs
 
 O código desenvolvido durante o capítulo de introdução foi alterado e foi proposta uma correção no mesmo. Alguns elementos estavam fora de ordem e foram corrigidos.
 <ul>
@@ -16,7 +18,7 @@ O código desenvolvido durante o capítulo de introdução foi alterado e foi pr
 
 <hr>
 
-## Stage 02, Desafio Extra - Recriando Layout
+### Desafio Extra - Recriando Layout
 
 Nesse desafio foi recriada uma aplicação a partir de um layout totalmente pronto para fortalecer os conceitos aprendidos nas últimas aulas.
 <ul>
@@ -30,7 +32,7 @@ Nesse desafio foi recriada uma aplicação a partir de um layout totalmente pron
 
 <hr>
 
-## Stage 02, Desafio 02 - Recriando Layout
+### Desafio 02 - Recriando Layout
 
 Nesse desafio foi recriada uma aplicação a partir de um layout totalmente pronto para fortalecer os conceitos aprendidos nas últimas aulas além de alguns novos que foram apresentados.
 <ul>
@@ -44,7 +46,7 @@ Nesse desafio foi recriada uma aplicação a partir de um layout totalmente pron
 
 <hr>
 
-## Stage 02, Desafio 02 - Corrigindo Bugs (02)
+### Desafio 02 - Corrigindo Bugs (02)
 
 O código desenvolvido durante o segundo capítulo foi alterado e foi proposta uma correção no mesmo. Alguns elementos estavam fora de ordem e foram corrigidos.
 <ul>
@@ -58,7 +60,7 @@ O código desenvolvido durante o segundo capítulo foi alterado e foi proposta u
 
 <hr>
 
-## Stage 02, Desafio 02 - Intermediário
+### Desafio 02 - Intermediário
 
 O código desenvolvido durante o segundo capítulo foi alterado foi alterado para de uma maneira a só utilizar divs. Foi proposta uma correção no mesmo utilizando tags semânticas do HTML5.
 <ul>
@@ -72,7 +74,7 @@ O código desenvolvido durante o segundo capítulo foi alterado foi alterado par
 
 <hr>
 
-## Stage 02, Desafio 02 - Avançado
+### Desafio 02 - Avançado
 
 Foi proposto um desafio usando os conceitos básicos de HTML e CSS aprendidos durante o <strong>Stage 02</strong>. Consistia em recriar uma landing page da Rocket.sect, uma empresa de segurança da informação.
 <ul>
@@ -81,5 +83,36 @@ Foi proposto um desafio usando os conceitos básicos de HTML e CSS aprendidos du
     </li>
     <li>
         Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel02/projeto02-avancado/">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
+
+<hr>
+
+## Stage 03
+
+### Projeto 01
+
+Durante as aulas sobre formulários, validações e customizações nos mesmos, um projeto foi desenvolvido visando aprender a semântica utilizada para acessiblidade, atributos como _type_, _name_ e _id_ para a tag <code><input/></code>, _action_, _method_ e _id_ para a tag <code><form></code>, entre outras.
+O projeto consiste em um formulário para criar e compartilhar eventos. Nele foi utilizado diversos tipos de input, como checkbox, text, textarea, number, select, date e time. 
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto01">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto01">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
+
+<hr>
+
+### Projeto 02 - Desafio Intermediário
+
+Nesse desafio foi proposto a recriação de um layout de formulário para inscrição de mentorias. Nele, utilizei as tags mais básicas apresentadas. 
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto02-intermediario">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto02-intermediario">aqui</a> para vê-lo no github-pages.
     </li>
 </ul>
