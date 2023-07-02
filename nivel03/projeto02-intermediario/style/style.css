@@ -1,12 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
 
-/*
-Fontes: 
-font-family: 'Poppins', sans-serif;
-font-family: 'Staatliches', cursive;
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -65,19 +59,36 @@ form {
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+}
+
+fieldset:nth-child(1) .fieldset-wrapper .input-wrapper:last-child,
+fieldset:nth-child(2) .fieldset-wrapper .input-wrapper,
+fieldset:nth-child(3) .fieldset-wrapper,
+.data-wrapper > .input-wrapper {
+    margin-bottom: 0px;
 }
 
 fieldset {
     border: none;
 }
 
+.name-wrapper {
+    display: flex;
+    gap: 22px;
+}
+
+.name-wrapper div{
+    width: 50%;
+}
+
 .input-wrapper {
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
 }
 
 legend {
+    margin-bottom: 32px;
     padding-bottom: 16px;
     color: #535971;
     
@@ -86,6 +97,30 @@ legend {
     line-height: 34px;
 
     border-bottom: 1px solid #E6E6F0;
+}
+
+.data-wrapper {
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.data-wrapper {
+    margin-bottom: 16px;
+}
+
+.data-wrapper:last-child {
+    margin-bottom: 0px;
+}
+
+.data-wrapper > div:nth-child(1){
+    width: 50%;
+    margin-right: 22px;
+}
+
+.data-wrapper div {
+    width: 140px;
 }
 
 h2 {
@@ -112,6 +147,10 @@ label span {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     line-height: 20px;
+}
+
+span:hover {
+    color: #74707c;
 }
 
 input {
@@ -147,4 +186,9 @@ input[type="submit"] {
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
+}
+
+input[type="submit"]:hover {
+    background: #d43353;
+    cursor: pointer;
 }
