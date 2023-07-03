@@ -92,7 +92,7 @@ Foi proposto um desafio usando os conceitos básicos de HTML e CSS aprendidos du
 
 ### Projeto 01
 
-Durante as aulas sobre formulários, validações e customizações nos mesmos, um projeto foi desenvolvido visando aprender a semântica utilizada para acessiblidade, atributos como _type_, _name_ e _id_ para a tag <code><input/></code>, _action_, _method_ e _id_ para a tag <code><form></code>, entre outras.
+Durante as aulas sobre formulários, validações e customizações nos mesmos, um projeto foi desenvolvido visando aprender a semântica utilizada para acessiblidade, atributos como _type_, _name_ e _id_ para a tag <code>&lt;input&gt;</code>, _action_, _method_ e _id_ para a tag <code>&lt;form&gt;</code>, entre outras.
 O projeto consiste em um formulário para criar e compartilhar eventos. Nele foi utilizado diversos tipos de input, como checkbox, text, textarea, number, select, date e time. 
 <ul>
     <li>
