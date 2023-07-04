@@ -125,11 +125,11 @@ Nesse desafio foi proposto a recriação de um layout de formulário para feedba
 <ul>
     <li>
         <!-- Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto02-intermediario">aqui</a> para ver o código. -->
-        :U+1F6A7: Em construção.
+        🚧 - Em construção.
     </li>
     <li>
         <!-- Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto02-intermediario">aqui</a> para vê-lo no github-pages. -->
-        :U+1F6A7: Em construção.
+        🚧 - Em construção.
     </li>
 </ul>
 
