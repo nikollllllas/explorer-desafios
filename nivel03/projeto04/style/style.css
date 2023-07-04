@@ -79,3 +79,7 @@ span {
     line-height: 8.0rem;
     letter-spacing: -0.2rem;
 }
+
+@media screen and (min-width: 40em) {
+    
+}
