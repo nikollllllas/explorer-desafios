@@ -116,3 +116,33 @@ Nesse desafio foi proposto a recriação de um layout de formulário para inscri
         Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto02-intermediario">aqui</a> para vê-lo no github-pages.
     </li>
 </ul>
+
+<hr>
+
+### Projeto 03 - Desafio Avançado
+
+Nesse desafio foi proposto a recriação de um layout de formulário para feedback das mentorias. Nele serão utilizadas as tags mais avançadas. 
+<ul>
+    <li>
+        <!-- Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto02-intermediario">aqui</a> para ver o código. -->
+        :U+1F6A7: Em construção.
+    </li>
+    <li>
+        <!-- Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto02-intermediario">aqui</a> para vê-lo no github-pages. -->
+        :U+1F6A7: Em construção.
+    </li>
+</ul>
+
+<hr>
+
+### Projeto 04 - Responsividade
+
+Nesse projeto foi apresentada a responsividade utilizando do mobile first, que consiste em pensar primeiro no display para dispositivos móveis. Para outros dispositivos de telas maiores, o display foi adaptado utilizando media queries. 
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto04">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto04/">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
