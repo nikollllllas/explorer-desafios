@@ -67,3 +67,41 @@ button {
     border-radius: .6rem;
     font-weight: 500;
 }
+
+@media (min-width: 1120px) {
+    main {
+        padding: 9rem 6rem;
+        max-width: fit-content;
+        flex-direction: row;
+        gap: 19rem;
+    }
+
+    .recipe {
+        max-width: 43.5rem;
+    }
+
+    .ingredients {
+        max-width: 52.5rem;
+    }
+
+    img {
+        margin: 6.6rem 0;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 5rem
+    }
+
+    p, li, strong {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    button {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 2.4rem;
+    }
+}
