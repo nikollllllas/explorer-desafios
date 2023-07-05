@@ -135,9 +135,23 @@ Nesse desafio foi proposto a recriação de um layout de formulário para feedba
 
 <hr>
 
-### Projeto 04 - Responsividade
+### Projeto 05 - Responsividade
 
-Nesse projeto foi apresentada a responsividade utilizando do mobile first, que consiste em pensar primeiro no display para dispositivos móveis. Para outros dispositivos de telas maiores, o display foi adaptado utilizando media queries. 
+Nesse projeto trabalhamos a responsividade. Também utilizando o mobile first, que consiste em pensar primeiro no display para dispositivos móveis, um layout de receita foi construído tanto para telas de dispositivos móveis, quanto para telas com displays maiores, com auxílio das media queries. 
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto05-cheesecake">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto05-cheesecake/">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
+
+<hr>
+
+### Projeto 05 - Cheesecake
+
+Nesse projeto apresentada a responsividade utilizando do mobile first, que consiste em pensar primeiro no display para dispositivos móveis. Para outros dispositivos de telas maiores, o display foi adaptado utilizando media queries. 
 <ul>
     <li>
         Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto04">aqui</a> para ver o código.
