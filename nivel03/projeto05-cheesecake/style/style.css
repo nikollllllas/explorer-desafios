@@ -23,12 +23,15 @@ body {
 main {
     margin-inline: auto;
     padding: 5.6rem 4rem;
-
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
     max-width: 32rem;
     box-sizing: content-box;
 }
 
 img {
+    margin: 3.2rem 0;
     width: 100%;
 }
 
@@ -37,16 +40,29 @@ h1 {
     line-height: 3.6rem;
 }
 
+.ingredients h1 {
+    margin-bottom: 3.2rem;
+}
+
 p, li, strong {
     font-size: 1.4rem;
     line-height: 1.8rem;
 }
 
+ul, ol {
+    padding-left: 2.4rem;
+}
+
+ul {
+    margin-bottom: 2.4rem;
+}
+
 button {
-    margin-top: 1.8rem;
+    margin-top: 2.4rem;
     padding: .8rem 1.2rem;
     background: #A54328;
     color: #FFF;
+
     border: none;
     border-radius: .6rem;
     font-weight: 500;
