@@ -1,0 +1,55 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'Staatliches', cursive;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 46.5rem;
+    background-color: #293241;
+
+    z-index: -1;
+}
+
+header {
+    margin: 10.8rem 18.0rem auto;
+    color: #FFF;
+    text-align: center;
+}
+
+h1 {         
+    text-transform: uppercase;
+    font-size: 3.6rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+img {
+    margin: 3.2rem 0;
+}
+
+p, label, span {
+    font-family: 'Poppins', sans-serif;
+}
