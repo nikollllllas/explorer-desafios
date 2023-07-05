@@ -69,6 +69,12 @@ button {
 }
 
 @media (min-width: 1120px) {
+    body {
+        background: url(../assets/wallpaper.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     main {
         padding: 9rem 6rem;
         max-width: fit-content;
@@ -86,6 +92,7 @@ button {
 
     img {
         margin: 6.6rem 0;
+        mix-blend-mode: multiply;
     }
 
     h1 {
