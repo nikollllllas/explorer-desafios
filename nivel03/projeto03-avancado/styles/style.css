@@ -86,14 +86,44 @@ fieldset {
     border: none;
 }
 
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2.2rem;
+}
+
+.name-wrapper div {
+    width: 50%;
+}
+
+.data-wrapper {
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
 legend { 
+    color: #253B51;
+    margin: 3.2rem 0;
+    text-align: center;
     font-size: 2.4rem;
     line-height: 3.4rem;
+    border-bottom: 1px solid #E6E6F0;
 }
 
 label {
     display: flex;
-    flex-direction: column;
     color: #4E4958;
     font-size: 1.4rem;
     line-height: 2.4rem;
@@ -105,3 +135,15 @@ span {
     line-height: 2rem;
 }
 
+input, textarea {
+    padding: 12px;
+    height: 56px;
+    border-radius: .8rem;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+}
+
+textarea {
+    padding: 0px;
+    height: 168px;
+}
