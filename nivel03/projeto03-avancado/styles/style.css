@@ -102,7 +102,9 @@ fieldset {
     gap: 2.2rem;
 }
 
-.name-wrapper div {
+.name-wrapper div, 
+.data-wrapper div,
+select{
     width: 50%;
 }
 
@@ -135,7 +137,7 @@ span {
     line-height: 2rem;
 }
 
-input, textarea {
+input, select, textarea {
     padding: 12px;
     height: 56px;
     border-radius: .8rem;
