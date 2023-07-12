@@ -124,12 +124,10 @@ Nesse desafio foi proposto a recriação de um layout de formulário para inscri
 Nesse desafio foi proposto a recriação de um layout de formulário para feedback das mentorias. Nele serão utilizadas as tags mais avançadas. 
 <ul>
     <li>
-        <!-- Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto02-intermediario">aqui</a> para ver o código. -->
-        🚧 - Em construção.
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto03-avancado">aqui</a> para ver o código.
     </li>
     <li>
-        <!-- Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto02-intermediario">aqui</a> para vê-lo no github-pages. -->
-        🚧 - Em construção.
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto03-avancado">aqui</a> para vê-lo no github-pages.
     </li>
 </ul>
 
