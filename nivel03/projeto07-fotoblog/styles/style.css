@@ -40,7 +40,41 @@ body {
     width: min(112rem, 100%);
 }
 
+header,
+nav,
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 7.2rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    color: var(--color-base-gray-300);
+    font-size: 1.8rem;
+}
+
+ul li:last-child {
+    color: var(--color-base-gray-900);
+}
+
+header img {
+    width: 4.2rem;
+    border-radius: 50%;
+}
+
+header form {
+    flex: 1;
+}
+
 main {
     background-color: var(--color-base-gray-100);
     overflow-y: scroll;
+}
+
+footer p {
+    padding: 1.6rem;
+    text-align: center;
+    font-weight: 600;
 }
