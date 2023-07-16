@@ -104,6 +104,21 @@ main {
     overflow-y: scroll;
 }
 
+main h1 {
+    padding-top: 1.6rem;
+    font-size: 2.4rem;
+}
+
+.gallery {
+    margin-top: 3.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item img {
+    width: 100%;
+}
+
 footer p {
     padding: 1.6rem;
     text-align: center;
