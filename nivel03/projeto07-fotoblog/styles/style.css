@@ -1,7 +1,14 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
 
 :root {
+    font-family: 'Mulish', sans-serif;
     font-size: 62.5%;
+
+    --color-base-white: #FFF;
+    --color-base-gray-100: #F5F5F5;
+    --color-base-gray-300: #8D8D99;
+    --color-base-gray-900: #202024;
 } 
 
 * {
@@ -13,14 +20,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+    
+    font-size: 1.6rem;
+    color: var(--color-base-gray-900);
+    background-color: var(--color-base-white);
+}
+
 #page {
     height: 100vh;
 
     display: grid;
-    grid-template-rows: 
-    max-content 
-    1fr 
-    max-content;
+    grid-template-rows: max-content 1fr max-content;
 }
 
 .container {
@@ -30,6 +41,6 @@
 }
 
 main {
-    background-color: #F5F5F5;
+    background-color: var(--color-base-gray-100);
     overflow-y: scroll;
 }
