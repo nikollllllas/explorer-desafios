@@ -12,3 +12,24 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+#page {
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 
+    max-content 
+    1fr 
+    max-content;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1.6rem 3.2rem;
+    width: min(112rem, 100%);
+}
+
+main {
+    background-color: #F5F5F5;
+    overflow-y: scroll;
+}
