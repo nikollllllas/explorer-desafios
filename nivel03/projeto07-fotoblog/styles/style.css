@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
 
 :root {
-    font-family: 'Mulish', sans-serif;
     font-size: 62.5%;
 
     --color-base-white: #FFF;
@@ -19,6 +18,13 @@
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+html, 
+body,
+:root,
+input {
+    font-family: 'Mulish', sans-serif;
 }
 
 body {
