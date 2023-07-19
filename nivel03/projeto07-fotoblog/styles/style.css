@@ -126,6 +126,7 @@ main h1 {
     aspect-ratio: 16/9;
     object-fit: cover;
     transition: all 200ms ease-out;
+    display: block;
 }
 
 .item img:hover {
