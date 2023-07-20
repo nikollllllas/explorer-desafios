@@ -1,0 +1,18 @@
+@charset 'UTF-8';
+
+:root {
+    --color-white: hsla(0, 0%, 100%, 1);
+    --color-grey-200: hsla(196, 100%, 98%, 1);
+
+    --color-primary: hsla(195, 91%, 25%, 1);
+    --color-secondary: hsla(195, 46%, 40%, 1);
+
+    --color-black-800: hsla(240, 6%, 13%, 1);
+    --color-black-900: hsla(240, 6%, 8%, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
