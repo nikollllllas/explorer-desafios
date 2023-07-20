@@ -133,15 +133,15 @@ Nesse desafio foi proposto a recriação de um layout de formulário para feedba
 
 <hr>
 
-### Projeto 05 - Responsividade
+### Projeto 04 - Responsividade
 
 Nesse projeto trabalhamos a responsividade. Também utilizando o mobile first, que consiste em pensar primeiro no display para dispositivos móveis, um layout de receita foi construído tanto para telas de dispositivos móveis, quanto para telas com displays maiores, com auxílio das media queries. 
 <ul>
     <li>
-        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto05-cheesecake">aqui</a> para ver o código.
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto04">aqui</a> para ver o código.
     </li>
     <li>
-        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto05-cheesecake/">aqui</a> para vê-lo no github-pages.
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto04/">aqui</a> para vê-lo no github-pages.
     </li>
 </ul>
 
@@ -152,9 +152,53 @@ Nesse projeto trabalhamos a responsividade. Também utilizando o mobile first, q
 Nesse projeto apresentada a responsividade utilizando do mobile first, que consiste em pensar primeiro no display para dispositivos móveis. Para outros dispositivos de telas maiores, o display foi adaptado utilizando media queries. 
 <ul>
     <li>
-        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto04">aqui</a> para ver o código.
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto05-cheesecake/">aqui</a> para ver o código.
     </li>
     <li>
-        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto04/">aqui</a> para vê-lo no github-pages.
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto05-cheesecake/">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
+
+<hr>
+
+### Projeto 06 - Galaxies
+
+O projeto galaxies foi construído utilizando, principalmente o display grid, apresentado ao decorrer das aulas.
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto06-galaxies">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto06-galaxies">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
+
+<hr>
+
+### Projeto 07 - Fotoblog
+
+O projeto foi construído utilizando o display grid juntamente com os novos conhecimentos de animations, possível graças ao CSS. São apresentados ao carregar a página e ao descansar o mouse sobre a imagem do respectivo card.
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto07-fotoblog">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto07-fotoblog">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
+
+<hr>
+
+### Projeto 08 - Blog de Gatos
+
+Nesse projeto apresentada a responsividade utilizando do mobile first, que consiste em pensar primeiro no display para dispositivos móveis. Para outros dispositivos de telas maiores, o display foi adaptado utilizando media queries. 
+<ul>
+    <li>
+        <!-- Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto08-catblog">aqui</a> para ver o código. -->
+        🚧 - Em Construção
+    </li>
+    <li>
+        <!-- Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto08-catblog/">aqui</a> para vê-lo no github-pages. -->
+        🚧 - Em Construção
     </li>
 </ul>
