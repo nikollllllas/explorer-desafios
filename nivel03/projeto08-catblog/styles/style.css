@@ -1,4 +1,5 @@
 @charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
 
 :root {
     --color-white: hsla(0, 0%, 100%);
@@ -22,4 +23,24 @@ body {
     font-size: 1.6rem;
     font-family: "Mulish", sans-serif;
     color: var(--color-grey-900);
+}
+
+.input-wrapper input {
+    font-size: 1.6rem;
+}
+
+h1, h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.related-matter ul li p {
+    font-size: 1.4rem;
 }
