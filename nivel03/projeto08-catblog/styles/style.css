@@ -1,18 +1,25 @@
 @charset 'UTF-8';
 
 :root {
-    --color-white: hsla(0, 0%, 100%, 1);
-    --color-grey-200: hsla(196, 100%, 98%, 1);
+    --color-white: hsla(0, 0%, 100%);
+    --color-grey-200: hsl(196, 100%, 98%);
 
-    --color-primary: hsla(195, 91%, 25%, 1);
-    --color-secondary: hsla(195, 46%, 40%, 1);
+    --color-primary: hsl(195, 91%, 25%);
+    --color-secondary: hsl(195, 46%, 40%);
 
-    --color-black-800: hsla(240, 6%, 13%, 1);
-    --color-black-900: hsla(240, 6%, 8%, 1);
+    --color-grey-800: hsl(240, 6%, 13%);
+    --color-grey-900: hsl(240, 5%, 7%);
 }
 
 * {
+    font-size: 62.5%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Mulish", sans-serif;
+    color: var(--color-grey-900);
 }
