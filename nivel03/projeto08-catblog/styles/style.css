@@ -103,6 +103,17 @@ a {
     font-size: 1.4rem;
 }
 
+.related-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.related-description-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     height: 6.4rem;
     display: flex;
