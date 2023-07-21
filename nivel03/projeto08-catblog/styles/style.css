@@ -187,6 +187,7 @@ footer {
 
 @media (min-width: 430px) {
     .page{
+        width: 100vw;
         display: grid;
         grid-template-columns: 
         header header header
@@ -195,18 +196,28 @@ footer {
     }
 
     header {
-        grid-area: header;
+        display: grid;
+        grid-area: header header header;
     }
 
     main {
-        grid-area: main;
+        display: grid;
+        grid-area: main main;
+    }
+
+    .title,
+    header {
+        display: flex;
+        flex-direction: row;
     }
 
     aside {
+        display: grid;
         grid-area: aside;
     }
 
     footer {
-        grid-area: footer;
+        display: grid;
+        grid-area: footer footer footer;
     }
 }
