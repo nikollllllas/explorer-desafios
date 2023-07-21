@@ -78,13 +78,25 @@ header nav,
     color: var(--color-white);
 }
 
-main, aside {
+div#main-img {
+    height: 21rem;
+    background-image: url('../assets/cat1.png');
+    object-fit: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.container {
     max-width: 38rem;
     margin: auto;
 }
 
 .title {
     margin: 3.2rem 0;
+}
+
+.title h1 {
+    margin-bottom: .8rem;
 }
 
 .tittle-button-wrapper {
