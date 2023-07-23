@@ -194,11 +194,11 @@ O projeto foi construído utilizando o display grid juntamente com os novos conh
 Nesse projeto apresentada a responsividade utilizando do mobile first, que consiste em pensar primeiro no display para dispositivos móveis. Para outros dispositivos de telas maiores, o display foi adaptado utilizando media queries. 
 <ul>
     <li>
-        <!-- Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto08-catblog">aqui</a> para ver o código. -->
-        🚧 - Em Construção
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel03/projeto08-catblog">aqui</a> para ver o código.
+        <!-- 🚧 - Em Construção -->
     </li>
     <li>
-        <!-- Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto08-catblog/">aqui</a> para vê-lo no github-pages. -->
-        🚧 - Em Construção
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel03/projeto08-catblog/">aqui</a> para vê-lo no github-pages.
+        <!-- 🚧 - Em Construção -->
     </li>
 </ul>
