@@ -186,38 +186,9 @@ footer {
 }
 
 @media (min-width: 430px) {
-    .page{
-        width: 100vw;
-        display: grid;
-        grid-template-columns: 
-        header header header
-        main main aside
-        footer footer footer;
-    }
-
-    header {
-        display: grid;
-        grid-area: header header header;
-    }
-
-    main {
-        display: grid;
-        grid-area: main main;
-    }
-
-    .title,
-    header {
+    .content {
         display: flex;
         flex-direction: row;
-    }
-
-    aside {
-        display: grid;
-        grid-area: aside;
-    }
-
-    footer {
-        display: grid;
-        grid-area: footer footer footer;
+        justify-content: space-between;
     }
 }
