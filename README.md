@@ -216,3 +216,19 @@ Nesse exercício foi posto em pratica o aprendizado do conteúdo apresentado at�
         Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel04/exercicio01/">aqui</a> para vê-lo no github-pages.
     </li>
 </ul>
+
+<hr>
+
+### Exercício 02
+
+Nesse exercício foi colocado em prática os aprendizados sobre arrays, objetos, loops, funções e operadores comparativos. O exercício consiste em analisar as notas de um estudante e apresentar se ele foi aprovado ou não, de acordo com a média de notas.
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel04/exercicio02">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel04/exercicio02/">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
+
+<hr>
