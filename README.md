@@ -202,3 +202,17 @@ Nesse projeto apresentada a responsividade utilizando do mobile first, que consi
         <!-- 🚧 - Em Construção -->
     </li>
 </ul>
+
+## Stage 04
+
+### Exercício 01
+
+Nesse exercício foi posto em pratica o aprendizado do conteúdo apresentado até o presente momento utilizando operadores, condicionais e funções. O exercício consiste em apresentar o resultado de algumas operações matemáticas de acordo com os valores inseridos pelo usuário.
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel04/exercicio01">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel04/exercicio01/">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
