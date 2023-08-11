@@ -7,6 +7,85 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    
+   <main>
+        <section>
+            <div id="header">
+                <div id="header-wrapper">
+                    <picture>
+                        <source srcset="./assets/main-img-small.png" media="(max-width: 7.6rem)">
+                        <source srcset="./assets/main-img-big.png">
+                    </picture>
+                    <div class="text-wrapper">
+                        <h1>Explore sem limites</h1>
+                        <p>Porque o aprendizado é contínuo</p>
+                    </div>
+                    <img src="./assets/arrow.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="cards-wrapper">
+                <div class="card-wrapper">
+                    <img src="./assets/yellow-moon.png" alt="">
+                    <h2>Não para nunca</h2>
+                    <p>Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
+                </div>
+                <div class="card-wrapper">
+                    <img src="./assets/blue-moon.png" alt="">
+                    <h2>Só volta</h2>
+                    <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
+                </div>
+                <div class="card-wrapper">
+                    <img src="./assets/pink-moon.png" alt="">
+                    <h2>Siga seu ritmo</h2>
+                    <p>Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="input-wrapper">
+                <label
+                    for="id-lastname">
+                    Sobrenome
+                </label>
+                <input
+                    type="text"
+                    id="id-lastname"
+                    required
+                />
+            </div>
+            <div
+                class="input-wrapper">
+                <label
+                    for="id-email">
+                    Email <span>(digite um e-mail válido)</span>
+                </label>
+                <input
+                    type="email"
+                    id="id-email"
+                    required
+                />
+            </div>
+            <div
+                class="input-wrapper">
+                <label
+                    for="id-feedback">
+                    Feedback sobre o mentor
+                </label>
+                <textarea
+                    id="id-feedback"
+                    cols="30"
+                    rows="10">
+                </textarea>
+            </div>
+            <button>
+                Enviar Mensagem
+            </button>
+            <img src="./assets/form-background.png" alt="">
+        </section>
+   </main>
+   <footer>
+        © 2023 - Rocketseat Explorer
+   </footer> 
 </body>
 </html>
