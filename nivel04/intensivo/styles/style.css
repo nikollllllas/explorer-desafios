@@ -50,12 +50,16 @@
 
 #cards-wrapper {
     background: linear-gradient(to right, var(--color-one-gradient), var(--color-two-gradient) 100%);
+    padding: 5rem 0;
+    display: flex;
+    gap: 4.9rem;
+    flex-direction: column;
 }
 
 .card-wrapper {
     display: flex;
     max-width: 34rem;
-    margin: 4.9rem auto;
+    margin: auto;
     padding: 2.6rem;
     flex-direction: column;
     border-radius: 2rem;
