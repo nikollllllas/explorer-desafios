@@ -102,9 +102,38 @@
 }
 
 .input-wrapper input {
+    padding: 1.6rem;
     height: 4.8rem;
     border-radius: 1.6rem;
     border: 1.5px solid var(--color-text);
+}
+
+.input-wrapper input:focus {
+    background: none;
+}
+
+.icon-person {
+    padding: 1rem;
+    background: url('../assets/person.png') no-repeat center left;
+    background-size: 24px 24px;
+}
+
+.icon-email {
+    padding: 1rem;
+    background: url('../assets/at.png') no-repeat center left;
+    background-size: 24px 24px;
+}
+
+.input-wrapper label {
+    height: .1rem;
+    width: .1rem;
+    position: absolute;
+    overflow: hidden;
+}
+
+::placeholder {
+    padding-left: 1rem;
+    color: var(--color-text);
 }
 
 .input-wrapper textarea {
