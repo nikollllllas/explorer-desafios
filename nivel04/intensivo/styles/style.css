@@ -44,7 +44,11 @@
     margin: 0 auto 3.5rem;
 }
 
-#header-wrapper img {
+.text-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-bottom: 9.3rem;
 }
 
@@ -138,6 +142,7 @@
 
 .input-wrapper textarea {
     height: 12.8rem;
+    padding: 1.6rem;
     border-radius: 1.6rem;
     border: 1.5px solid var(--color-text);
     resize: none;
@@ -158,7 +163,7 @@
     transition: 0.2s;
 }
 
-#form-wrapper > img {
+.fieldset-wrapper > img {
     display: none;
 }
 
@@ -171,4 +176,67 @@ footer {
     color: var(--color-white);
     font-size: 2rem;
     background: linear-gradient(to right, var(--color-one-gradient), var(--color-two-gradient) 100%);
+}
+
+@media (min-width: 720px) {
+    #header-wrapper {
+        margin: -1.8rem auto 3.6rem;
+        width: auto;
+        background-color: #FFF;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }    
+
+    #header-wrapper h1 {
+        padding-top: 32rem;
+        font-size: 5.8rem;
+    }
+    
+    #header-wrapper p {
+        font-size: 3.2rem;
+    }
+
+    .text-wrapper {
+        text-align: left;
+    }
+
+    .text-img-wrapper {
+        display: flex;
+        align-items: start;
+        margin: 0;
+    }
+
+    .text-img-wrapper img {
+        padding-top: 18rem;
+    }
+
+    #cards-wrapper {
+        padding: 5rem 0;
+        display: flex;
+        gap: 4.9rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .card-wrapper {
+        margin: 0;   
+    }
+
+    #form-wrapper {
+        display: flex;
+        width: 100%;
+    }
+
+    .fieldset-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .fieldset-wrapper > img {
+        display: flex;
+    }
+
 }
