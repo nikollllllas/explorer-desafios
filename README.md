@@ -233,7 +233,7 @@ Nesse exercício foi colocado em prática os aprendizados sobre arrays, objetos,
 
 <hr>
 
-### Intensivão
+### Intensivo - HTML e CSS
 
 Neste exercício foram colocados todos os aprendizados de HTML e CSS mostrados até agora. O exercício consiste em recriar o layout de uma página utilizando HTML e CSS de forma responsiva.
 <ul>
