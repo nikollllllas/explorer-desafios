@@ -232,3 +232,17 @@ Nesse exercício foi colocado em prática os aprendizados sobre arrays, objetos,
 </ul>
 
 <hr>
+
+### Intensivão
+
+Neste exercício foram colocados todos os aprendizados de HTML e CSS mostrados até agora. O exercício consiste em recriar o layout de uma página utilizando HTML e CSS de forma responsiva.
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel04/intensivo">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel04/intensivo/">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
+
+<hr>
