@@ -246,3 +246,17 @@ Neste exercício foram colocados todos os aprendizados de HTML e CSS mostrados a
 </ul>
 
 <hr>
+
+### Intensivo - JS
+
+Neste exercício foram propostos 10 pequenos exercícioso a serem feitos com o javascript. Trabalhar com operações matemáticas, tipos de variáveis, funções, condicionais, operadores comparativos, entre outros.
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel04/intensivo-js/">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel04/intensivo-js/">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
+
+<hr>
