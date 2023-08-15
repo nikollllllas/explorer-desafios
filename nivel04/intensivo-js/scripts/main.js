@@ -76,14 +76,23 @@ function numberGenerator () {
 
 // 8.
 
-const numberOne = numberGenerator()
-const numberTwo = numberGenerator()
+// const numberOne = numberGenerator()
+// const numberTwo = numberGenerator()
 
-function division (numberOne, numberTwo) {
-    division = numberOne / numberTwo
-    return division
+// function division (numberOne, numberTwo) {
+//     division = numberOne / numberTwo
+//     return division
+// }
+
+// const divisionResult = division(numberOne, numberTwo)
+
+// alert(`O resultado da divisão é: ${divisionResult}\nOs número utilizados foram: ${numberOne} e ${numberTwo}`)
+
+// 9. e 10.
+const randomNumber = numberGenerator()
+
+if(randomNumber % 1) {
+    alert(`É um número par. O número é ${randomNumber}`)
+} else if (randomNumber % 2) {
+    alert(`É um número ímpar. O número é ${randomNumber}`)
 }
-
-const divisionResult = division(numberOne, numberTwo)
-
-alert(`O resultado da divisão é: ${divisionResult}\nOs número utilizados foram: ${numberOne} e ${numberTwo}`)
