@@ -3,8 +3,8 @@ alert('Hello World!')
 
 
 // // 2.
-let numberOne = 50
-let numberTwo = 51
+let numberOne = numberGenerator()
+let numberTwo = numberGenerator()
 
 function sumNumbers(numberOne, numberTwo) {
     const sum = numberOne + numberTwo
@@ -13,7 +13,7 @@ function sumNumbers(numberOne, numberTwo) {
 
 sumResult = sumNumbers(numberOne, numberTwo)
 
-alert(`A soma dos dois números é: ${sumResult}`)
+alert(`A soma dos dois números é: ${sumResult}\nOs números são: ${numberOne} e ${numberTwo}`)
 
 
 // 3. 
@@ -56,9 +56,9 @@ function subtract(numberOneSub, numberTwoSub) {
     return subtract
 }
 
-const subtractResult = subtract(numberOne, numberTwo)
+const subtractResult = subtract(numberOneSub, numberTwoSub)
 
-alert(`O resultado da subtração é: ${subtractResult}\nOs números utilizados foram: ${numberOne} e ${numberTwo}`)
+alert(`O resultado da subtração é: ${subtractResult}\nOs números utilizados foram: ${numberOneSub} e ${numberTwoSub}`)
 
 // 7.
 
@@ -70,9 +70,9 @@ function multiplication (numberOneMulti, numberTwoMulti) {
     return multiplication
 }
 
-const multiplytResult = multiply(numberOne, numberTwo)
+const multiplytResult = multiplication(numberOneMulti, numberTwoMulti)
 
-alert(`O resultado da multiplicação é: ${multiplytResult}\nOs números utilizados foram: ${numberOne} e ${numberTwo}`)
+alert(`O resultado da multiplicação é: ${multiplytResult}\nOs números utilizados foram: ${numberOneMulti} e ${numberTwoMulti}`)
 
 // 8.
 
@@ -84,9 +84,9 @@ function division (numberOneDivi, numberTwoDivi) {
     return division
 }
 
-const divisionResult = division(numberOne, numberTwo)
+const divisionResult = division(numberOneDivi, numberTwoDivi)
 
-alert(`O resultado da divisão é: ${divisionResult}\nOs número utilizados foram: ${numberOne} e ${numberTwo}`)
+alert(`O resultado da divisão é: ${divisionResult}\nOs número utilizados foram: ${numberOneDivi} e ${numberTwoDivi}`)
 
 // 9. e 10.
 const randomNumber = numberGenerator()
