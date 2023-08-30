@@ -1,61 +1,60 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap");
 
 :root {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 7.2rem 10.4rem;
-    display: grid;
-    justify-content: center;
+  margin: 7.2rem 10.4rem;
+  display: grid;
+  justify-content: center;
 
-    font-family: 'Mulish', sans-serif;
-    background-color: #121214;
-    font-weight: 900;
+  font-family: "Mulish", sans-serif;
+  background-color: #121214;
+  font-weight: 900;
 }
 
 main {
-    display: grid;
-    grid-template-columns: repeat(3, 37rem);
-    gap: 4.8rem 6.0rem;
+  display: grid;
+  grid-template-columns: repeat(3, 37rem);
+  gap: 4.8rem 6rem;
 }
 
 h1 {
-    font-size: 5.8rem;
-    color: #02799D;
+  font-size: 5.8rem;
+  color: #02799d;
 }
 
 header p {
-    color: #E1E1E6;
-    margin-bottom: 6.4rem;
-    font-size: 3.2rem;
+  color: #e1e1e6;
+  margin-bottom: 6.4rem;
+  font-size: 3.2rem;
 }
 
 .card {
+  border-radius: 0.8rem;
+  border: 2px solid #323238;
+  background: #202024;
 
-    border-radius: .8rem;
-    border: 2px solid #323238;
-    background: #202024;
-
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .card h2 {
-    padding: 2.4rem 3.2rem 0;
-    font-size: 3.6rem;
-    color: #E1E1E6;
+  padding: 2.4rem 3.2rem 0;
+  font-size: 3.6rem;
+  color: #e1e1e6;
 }
 
 .card p {
-    padding: 2.4rem 3.2rem 3.2rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #C4C4CC;
+  padding: 2.4rem 3.2rem 3.2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #c4c4cc;
 }

@@ -1,79 +1,80 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
-    text-align: center;
+  text-align: center;
 }
 
 main {
-    margin: 64px 0px;
+  margin: 64px 0px;
 }
 
 img:nth-child(1) {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 h1 {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
-h1, span {
-    color: #3F3D56;
-    font-size: 32px;
-    font-weight: 500;
-    font-family: 'Dosis', sans-serif;
+h1,
+span {
+  color: #3f3d56;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Dosis", sans-serif;
 }
 
 h1 span {
-    color: #EE24FF;
+  color: #ee24ff;
 }
 
 p {
-    margin: auto;
-    max-width: 540px;
-    color: #828282;
-    font-size: 15px;
-    line-height: 22px;
+  margin: auto;
+  max-width: 540px;
+  color: #828282;
+  font-size: 15px;
+  line-height: 22px;
 }
 
 .stronger {
-    color: #3F3D56;
+  color: #3f3d56;
 }
 
 main p {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 #line {
-    margin: auto;
-    max-width: 391px;
-    border: 1px solid #ECEFF2;
+  margin: auto;
+  max-width: 391px;
+  border: 1px solid #eceff2;
 }
 
 a {
-    color: #3F3D56;
-    font-size: 15px;
-    font-weight: 700;
-    text-decoration: none;
+  color: #3f3d56;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 a:nth-child(2) {
-    margin: 0px 42px;
+  margin: 0px 42px;
 }
 
 #img-wave {
-    margin: 0;
-    width: 100%;
-    max-height: 104px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
+  margin: 0;
+  width: 100%;
+  max-height: 104px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }

@@ -1,242 +1,253 @@
 @charset 'UTF-8';
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap");
 
 :root {
-    font-size: 62.5%;
-    font-family: 'Mulish', sans-serif;
+  font-size: 62.5%;
+  font-family: "Mulish", sans-serif;
 
-    --color-title: #B52184;
-    --color-text: #312D64;
-    --color-white: #FFF;
-    --color-black: #000;
-    --color-one-gradient: #343193;
-    --color-two-gradient: #302C63;
+  --color-title: #b52184;
+  --color-text: #312d64;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-one-gradient: #343193;
+  --color-two-gradient: #302c63;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #header-wrapper {
-    width: auto;
-    background-color: #FFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-wrapper {
-    text-align: center;
+  text-align: center;
 }
 
 #header-wrapper h1 {
-    font-size: 3.2rem;
-    color: var(--color-title);
-    margin: 1.6rem auto 0;
+  font-size: 3.2rem;
+  color: var(--color-title);
+  margin: 1.6rem auto 0;
 }
 
 #header-wrapper p {
-    font-size: 2rem;
-    color: var(--color-text);
-    margin: 0 auto 3.5rem;
+  font-size: 2rem;
+  color: var(--color-text);
+  margin: 0 auto 3.5rem;
 }
 
 .text-img-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 9.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 9.3rem;
 }
 
 #cards-wrapper {
-    background: linear-gradient(to right, var(--color-one-gradient), var(--color-two-gradient) 100%);
-    padding: 5rem 0;
-    display: flex;
-    gap: 4.9rem;
-    flex-direction: column;
+  background: linear-gradient(
+    to right,
+    var(--color-one-gradient),
+    var(--color-two-gradient) 100%
+  );
+  padding: 5rem 0;
+  display: flex;
+  gap: 4.9rem;
+  flex-direction: column;
 }
 
 .card-wrapper {
-    display: flex;
-    max-width: 34rem;
-    margin: auto;
-    padding: 2.6rem;
-    flex-direction: column;
-    border-radius: 2rem;
-    background-color: var(--color-white);
+  display: flex;
+  max-width: 34rem;
+  margin: auto;
+  padding: 2.6rem;
+  flex-direction: column;
+  border-radius: 2rem;
+  background-color: var(--color-white);
 }
 .card-wrapper img {
-    max-width: 8rem;
-    margin-bottom: 3.3rem;
+  max-width: 8rem;
+  margin-bottom: 3.3rem;
 }
 
 .card-wrapper h2 {
-    font-size: 2.8rem;
-    color: var(--color-title);
-    margin-bottom: 1.8rem;
+  font-size: 2.8rem;
+  color: var(--color-title);
+  margin-bottom: 1.8rem;
 }
 
 .card-wrapper p {
-    max-width: 28rem;
-    font-size: 1.6rem;
-    color: var(--color-text);
+  max-width: 28rem;
+  font-size: 1.6rem;
+  color: var(--color-text);
 }
 
 #form-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin: 7.4rem auto;
-    padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  margin: 7.4rem auto;
+  padding: 0 4rem;
 }
 
 #form-wrapper h1 {
-    font-size: 3.2rem;
-    color: var(--color-title);
-    margin-bottom: 4rem;
+  font-size: 3.2rem;
+  color: var(--color-title);
+  margin-bottom: 4rem;
 }
 
 .input-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.4rem;
 }
 
 .input-wrapper input {
-    padding: 1.6rem;
-    height: 4.8rem;
-    border-radius: 1.6rem;
-    border: 1.5px solid var(--color-text);
+  padding: 1.6rem;
+  height: 4.8rem;
+  border-radius: 1.6rem;
+  border: 1.5px solid var(--color-text);
 }
 
 .input-wrapper input:focus {
-    background: none;
+  background: none;
 }
 
 .icon-person {
-    padding: 1rem;
-    background: url('../assets/person.png') no-repeat center left;
-    background-size: 24px 24px;
+  padding: 1rem;
+  background: url("../assets/person.png") no-repeat center left;
+  background-size: 24px 24px;
 }
 
 .icon-email {
-    padding: 1rem;
-    background: url('../assets/at.png') no-repeat center left;
-    background-size: 24px 24px;
+  padding: 1rem;
+  background: url("../assets/at.png") no-repeat center left;
+  background-size: 24px 24px;
 }
 
 .input-wrapper label {
-    height: .1rem;
-    width: .1rem;
-    position: absolute;
-    overflow: hidden;
+  height: 0.1rem;
+  width: 0.1rem;
+  position: absolute;
+  overflow: hidden;
 }
 
 ::placeholder {
-    padding-left: 1rem;
-    color: var(--color-text);
+  padding-left: 1rem;
+  color: var(--color-text);
 }
 
 .input-wrapper textarea {
-    height: 12.8rem;
-    padding: 1.6rem;
-    border-radius: 1.6rem;
-    border: 1.5px solid var(--color-text);
-    resize: none;
+  height: 12.8rem;
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+  border: 1.5px solid var(--color-text);
+  resize: none;
 }
 
 #form-wrapper button {
-    padding: 1.6rem;
-    height: 4.4rem;
-    width: 16rem;
-    border-radius: 1.6rem;
-    border: none;
-    background: linear-gradient(to right, var(--color-one-gradient), var(--color-two-gradient) 100%);
-    color: var(--color-white);
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.2s;
+  padding: 1.6rem;
+  height: 4.4rem;
+  width: 16rem;
+  border-radius: 1.6rem;
+  border: none;
+  background: linear-gradient(
+    to right,
+    var(--color-one-gradient),
+    var(--color-two-gradient) 100%
+  );
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .fieldset-wrapper > img {
-    display: none;
+  display: none;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.6rem;
-    height: 7.8rem;
-    color: var(--color-white);
-    font-size: 2rem;
-    background: linear-gradient(to right, var(--color-one-gradient), var(--color-two-gradient) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem;
+  height: 7.8rem;
+  color: var(--color-white);
+  font-size: 2rem;
+  background: linear-gradient(
+    to right,
+    var(--color-one-gradient),
+    var(--color-two-gradient) 100%
+  );
 }
 
 @media (min-width: 720px) {
-    #header-wrapper {
-        margin: -1.8rem auto 3.6rem;
-        width: auto;
-        background-color: #FFF;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-evenly;
-        align-items: center;
-    }    
+  #header-wrapper {
+    margin: -1.8rem auto 3.6rem;
+    width: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
-    #header-wrapper h1 {
-        padding-top: 32rem;
-        font-size: 5.8rem;
-    }
-    
-    #header-wrapper p {
-        font-size: 3.2rem;
-    }
+  #header-wrapper h1 {
+    padding-top: 32rem;
+    font-size: 5.8rem;
+  }
 
-    .text-wrapper {
-        text-align: left;
-    }
+  #header-wrapper p {
+    font-size: 3.2rem;
+  }
 
-    .text-img-wrapper {
-        display: flex;
-        align-items: start;
-        margin: 0;
-    }
+  .text-wrapper {
+    text-align: left;
+  }
 
-    .text-img-wrapper img {
-        padding-top: 18rem;
-    }
+  .text-img-wrapper {
+    display: flex;
+    align-items: start;
+    margin: 0;
+  }
 
-    #cards-wrapper {
-        padding: 5rem 0;
-        display: flex;
-        gap: 4.9rem;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+  .text-img-wrapper img {
+    padding-top: 18rem;
+  }
 
-    .card-wrapper {
-        margin: 0;   
-    }
+  #cards-wrapper {
+    padding: 5rem 0;
+    display: flex;
+    gap: 4.9rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
-    #form-wrapper {
-        display: flex;
-        width: 100%;
-    }
+  .card-wrapper {
+    margin: 0;
+  }
 
-    .fieldset-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
+  #form-wrapper {
+    display: flex;
+    width: 100%;
+  }
 
-    .fieldset-wrapper > img {
-        display: flex;
-    }
+  .fieldset-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 
+  .fieldset-wrapper > img {
+    display: flex;
+  }
 }

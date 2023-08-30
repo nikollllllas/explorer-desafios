@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+
+:root {
+  font-size: 62.5%;
+
+  --color-white: #fff;
+  --color-gray: #dce2e9;
+  --color-iris: #7879f1;
+  --color-primary-font: #34355b;
+  --color-secondary-font: #34355bcc;
+  --color-backgroud: linear-gradient(315deg, #c2e9fb 0%, #a1c4fd 100%);
+}
+
+body {
+  background-color: var(--color-backgroud);
+}
