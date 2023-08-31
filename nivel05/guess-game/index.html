@@ -8,14 +8,20 @@
   </head>
   <body>
     <main>
-      <div class="text-wrapper">
-        <h1>Jogo da Adivinhação</h1>
-        <p>Adivinhe o número entre 0 e 10</p>
+      <div class="screen-one hide">
+        <div class="text-wrapper">
+          <h1>Jogo da Adivinhação</h1>
+          <p>Adivinhe o número entre 0 e 10</p>
+        </div>
+        <form>
+          <input type="number">
+          <button>Tentar</button>
+        </form>
       </div>
-      <form>
-        <input type="number">
-        <button>Tentar</button>
-      </form>
+      <div class="screen-two">
+        <h2>Acertou em X vezes</h2>
+        <button>Jogar novamente</button>
+      </div>
     </main>
     <script src="./js/main.js"></script>
   </body>
