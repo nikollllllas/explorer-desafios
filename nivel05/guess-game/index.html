@@ -8,17 +8,17 @@
   </head>
   <body>
     <main>
-      <div class="screen-one hide">
+      <div class="screen-one">
         <div class="text-wrapper">
           <h1>Jogo da Adivinhação</h1>
           <p>Adivinhe o número entre 0 e 10</p>
         </div>
         <form>
           <input type="number">
-          <button>Tentar</button>
+          <button onclick="handleClick(event)">Tentar</button>
         </form>
       </div>
-      <div class="screen-two">
+      <div class="screen-two hide">
         <h2>Acertou em X vezes</h2>
         <button>Jogar novamente</button>
       </div>
