@@ -278,3 +278,20 @@ Neste exercício foram propostos 10 pequenos exercícioso a serem feitos com o j
 </ul>
 
 <hr>
+
+# Stage 05
+
+### Guess Game
+
+No exercício, foi proposto a criação de um jogo de adivinhação. O jogo consiste em adivinhar um número aleatório entre 0 e 10. O jogador tem infinitas tentativas. Caso acerte, o jogo é finalizado. 
+
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel05/guess-game/">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel05/guess-game/index.html">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
+
+<hr>
