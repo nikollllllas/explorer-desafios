@@ -30,7 +30,21 @@ body {
     font-family: 'DM Sans', sans-serif;
     font-size: 1.6rem;
     color: var(--color-text);
-    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    background: linear-gradient(45deg, #190361, #B0F);
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 main {
@@ -53,6 +67,14 @@ h1 {
     font-size: 1.5rem;
 }
 
+.screen-one img {
+    transition: transform 0.2s ease-in-out;
+}
+
+.screen-one img:hover {
+    animation: shake 0.2s infinite;
+}
+
 .phrase-wrapper {
     margin-top: 1.7rem;
     padding: 1rem;
@@ -65,7 +87,7 @@ h1 {
     box-shadow: .2rem .2rem .2rem 0 rgba(85, 85, 85, 0.50);
 }
 
-img {
+.screen-two img {
     margin: 1.7rem 0;
     padding: 4.2rem 0;
 }
@@ -79,4 +101,22 @@ button {
     font-size: 1.5rem;
     font-weight: 700;
     font-family: 'DM Sans', sans-serif;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-2px, -2px);
+    }
+    50% {
+        transform: translate(2px, 2px);
+    }
+    75% {
+        transform: translate(-2px, -2px);
+    }
+    100% {
+        transform: translate(2px, 2px);
+    }
 }
