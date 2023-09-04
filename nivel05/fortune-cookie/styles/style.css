@@ -73,6 +73,7 @@ h1 {
 
 .screen-one img:hover {
     animation: shake 0.2s infinite;
+    cursor: pointer;
 }
 
 .phrase-wrapper {
