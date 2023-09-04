@@ -295,3 +295,18 @@ No exercício, foi proposto a criação de um jogo de adivinhação. O jogo cons
 </ul>
 
 <hr>
+
+### Fortune Cookie
+
+O exercício proposto foi a criação de um "display" de frases motivacionais, como um biscoito da sorte, tradicional da cultura chinesa. O usuário pode clicar no botão para gerar uma nova frase. A aplicação tem um array com algumas frases e randomiza uma delas para ser apresentada ao usuário.
+
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel05/fortune-cookie/">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel05/fortune-cookie/index.html">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
+
+<hr>
