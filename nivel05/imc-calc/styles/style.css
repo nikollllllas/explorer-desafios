@@ -12,7 +12,7 @@
 
     --color-background-modal: #000000B2;
     --color-background: #040924;
-    --color-input-focus-border-and-button: #02799D;
+    --color-input-focus-border-and-button: #026e8f;
     --color-label: #00453A;
     --color-title: #0C3440;
     --color-border: #4950574D;
@@ -88,7 +88,6 @@ input {
     padding: 1.6rem;
     border-radius: .4rem;
     border: 1px solid var(--color-border);
-    color: var(--color-text-input);
     background: var(--color-background-input);
 }
 
@@ -98,7 +97,12 @@ input {
     color: var(--color-text-input-focus);
 }
 
+.input-wrapper input::placeholder {
+    color: var(--color-text-input);
+}
+
 button {
+    margin-top: 3.2rem;
     display: flex;
     width: 100%;
     padding: 1.6rem;
@@ -112,4 +116,9 @@ button {
     border: none;
     background: var(--color-input-focus-border-and-button);
     cursor: pointer;
+    transition: background .3s;
+}
+
+button:hover {
+    background: #015974;
 }
