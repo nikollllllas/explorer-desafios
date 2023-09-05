@@ -101,7 +101,7 @@ input {
     color: var(--color-text-input);
 }
 
-button {
+form button {
     margin-top: 3.2rem;
     display: flex;
     width: 100%;
@@ -119,8 +119,13 @@ button {
     transition: background .3s;
 }
 
-button:hover {
+form button:hover {
     background: #015974;
+}
+
+.modal-bg.open {
+    opacity: 1; 
+    visibility: visible;
 }
 
 .modal-bg {
@@ -130,10 +135,32 @@ button:hover {
     inset: 0;
     display: grid;
     place-items: center;
-    background: var(--color-background-modal) ;
+    background: var(--color-background-modal);
+
+    opacity: 0;
+    visibility: hidden;
 }
 
 .modal-wrapper {
     z-index: 1;
     position: absolute;
+}
+
+.modal-wrapper {
+    position: relative;
+}
+
+.modal-card button {
+    background: none;
+    border: none;
+
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.modal-card button:hover {
+    transform: scale(1.1);
 }
