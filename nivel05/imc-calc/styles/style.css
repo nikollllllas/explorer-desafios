@@ -1,0 +1,72 @@
+@charset 'UTF8';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    font-size: 62.5%;
+
+    --color-background-modal: #000000B2;
+    --color-background: #040924;
+    --color-input-focus-border-and-button: #02799D;
+    --color-label: #00453A;
+    --color-title: #0C3440;
+    --color-border: #4950574D;
+    --color-text-input: #49505780;
+    --color-text-input-focus: #212529;
+    --color-background-input: #DCE2E9;
+    --color-white: #FFF;
+    --color-black: #000;
+    --color-red: #F03E3E;
+}
+
+html, body, input, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background);
+}
+
+main {
+    min-width: 4.4rem, 90%;
+    background: var(--color-white);
+    display: flex;
+    padding: 48px 64px 64px 64px;
+    border-radius: .6rem;
+    flex-direction: column;
+    gap: 32px;
+}
+
+h1 {
+    color: var(--color-title);
+    font-size: 3.2rem;
+    line-height: 4rem;
+}
+
+label {
+    color: var(--color-label);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+input {
+    padding: 1.6rem;
+    border-radius: .4rem;
+    border: .1rem solid var(--color-border);
+    color: var(--color-text-input);
+    background: var(--color-background-input);
+}
+
+input:focus {
+    border: .1rem solid var(--color-input-focus-border-and-button);
+    color: var(--color-text-input-focus);
+}
+
+button {
+    width: 100%;
+    padding: 1.6rem;
+    color: var(--color-white);
+    background-color: --color-input-focus-border-and-button;
+}
