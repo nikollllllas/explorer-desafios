@@ -32,6 +32,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     background-color: var(--color-background);
@@ -45,6 +46,7 @@ main {
     background: var(--color-white);
     padding: 48px 64px 64px 64px;
     border-radius: .6rem;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
     flex-direction: column;
     gap: 32px;
 }
