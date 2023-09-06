@@ -2,12 +2,22 @@ const form = document.querySelector('form')
 const inputHeight = document.querySelector('#id-height')
 const inputWeight = document.querySelector('#id-weight')
 
-const modalWrapper = document.querySelector('.modal-bg')
-const modalMessage = document.querySelector('#imc-result')
-const closeButton = document.querySelector('#close-button')
 
-closeButton.onclick = () => {
-    modalWrapper.classList.remove('open')
+const Modal = {
+    wrapper: document.querySelector('.modal-bg'),
+    message: document.querySelector('#imc-result'),
+    buttonClose: document.querySelector('#close-button'),
+
+    open() {
+        Modal.wrapper.classList.add('open')
+    },
+    close() {
+        Modal.wrapper.classList.remove('open')
+    }
+}
+
+Modal.buttonClose.onclick = () => {
+    Modal.close()
 }
 
 form.onsubmit = (e) => {
@@ -20,8 +30,8 @@ form.onsubmit = (e) => {
     console.log(result)
     const message = `Seu IMC é de ${result}`
     
-    modalMessage.innerHTML = message
-    modalWrapper.classList.add('open')
+    Modal.message.innerHTML = message
+    Modal.open()
 }
 
 function IMC(weight, height) {
