@@ -4,7 +4,11 @@ const inputWeight = document.querySelector('#id-weight')
 
 const modalWrapper = document.querySelector('.modal-bg')
 const modalMessage = document.querySelector('#imc-result')
-const closeButton = document.querySelector('.modal-card #close-button')
+const closeButton = document.querySelector('#close-button')
+
+closeButton.onclick = () => {
+    modalWrapper.classList.remove('open')
+}
 
 form.onsubmit = (e) => {
     e.preventDefault()
@@ -21,9 +25,6 @@ form.onsubmit = (e) => {
 }
 
 function IMC(weight, height) {
-    return (weight / ((height*100)**2)).toFixed(2)
-}
-
-function closeModal() {
-    closeButton.classList.remove('open')
+    const result = (weight / ((height/100)**2))
+    return result.toFixed(2)
 }
