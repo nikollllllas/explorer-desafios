@@ -1,24 +1,8 @@
+import { Modal } from './modal.js'
+
 const form = document.querySelector('form')
 const inputHeight = document.querySelector('#id-height')
 const inputWeight = document.querySelector('#id-weight')
-
-
-const Modal = {
-    wrapper: document.querySelector('.modal-bg'),
-    message: document.querySelector('#imc-result'),
-    buttonClose: document.querySelector('#close-button'),
-
-    open() {
-        Modal.wrapper.classList.add('open')
-    },
-    close() {
-        Modal.wrapper.classList.remove('open')
-    }
-}
-
-Modal.buttonClose.onclick = () => {
-    Modal.close()
-}
 
 form.onsubmit = (e) => {
     e.preventDefault()
