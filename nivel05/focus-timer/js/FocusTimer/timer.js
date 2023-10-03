@@ -1,5 +1,6 @@
 import state from "./state.js"
 import * as elements from "./elements.js"
+import { kitchenTimerAudio } from "./sounds.js"
 import { reset } from "./actions.js"
 
 export function countdown() {
@@ -17,8 +18,9 @@ export function countdown() {
         minutes--
     }
 
-    if(minutes <0) {
+    if(minutes < 0) {
         reset()
+        kitchenTimerAudio.play()
         return
     }
 
