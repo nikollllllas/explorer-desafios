@@ -3,8 +3,8 @@ import * as events from './events.js'
 
 export function start(minutes, seconds) {
     state.minutes = minutes
-    state.secods = seconds
+    state.seconds = seconds
 
-    console.log(minutes, seconds)
+    events.registerControls()
 }
 
