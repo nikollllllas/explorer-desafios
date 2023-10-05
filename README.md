@@ -310,3 +310,31 @@ O exercício proposto foi a criação de um "display" de frases motivacionais, c
 </ul>
 
 <hr>
+
+### Calculadora de IMC
+
+No projeto a seguir, foi proposta a ideia onde seria desenvolvida uma calculadora de IMC. O usuário insere seu peso e sua altura e o sistema calcula o IMC e apresenta o resultado. A partir daqui começaram a ser trabalhados os conceitos de componentização utilizando "import" e "export" do javascript. 
+
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel05/imc-calc/">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel05/imc-calc/index.html">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
+
+<hr>
+
+### Focus Timer
+
+O projeto teve o objetivo de criar um timer (no estilo pomodoro), onde o usuário pode definir um tempo para focar em uma tarefa. O sistema apresenta um contador regressivo e um botão para iniciar o timer, além de um botão para pausa, um botão para reiniciar e um para a música. Ao final do tempo, o sistema emite um alerta sonoro e o usuário pode iniciar o próximo timer. 
+
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel05/focus-timer/">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel05/focus-timer/index.html">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
