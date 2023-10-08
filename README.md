@@ -4,6 +4,9 @@ O repositório foi criado com o intuito de hospedar os desafios criados durante 
 
 ## Stage 02
 
+<details> 
+<summary> Clique para expandir os Desafios </summary>
+
 ### Desafio 01 - Corrigindo Bugs
 
 O código desenvolvido durante o capítulo de introdução foi alterado e foi proposta uma correção no mesmo. Alguns elementos estavam fora de ordem e foram corrigidos.
@@ -94,7 +97,12 @@ Foi proposto um desafio usando os conceitos básicos de HTML e CSS aprendidos du
 
 <hr>
 
+</details>
+
 ## Stage 03
+
+<details> 
+<summary> Clique para expandir os Desafios </summary>
 
 ### Projeto 01
 
@@ -217,7 +225,15 @@ Nesse projeto apresentada a responsividade utilizando do mobile first, que consi
     </li>
 </ul>
 
+<hr>
+
+</details>
+
 ## Stage 04
+
+
+<details> 
+<summary> Clique para expandir os Desafios </summary>
 
 ### Exercício 01
 
@@ -279,7 +295,12 @@ Neste exercício foram propostos 10 pequenos exercícioso a serem feitos com o j
 
 <hr>
 
-# Stage 05
+</details>
+
+## Stage 05
+
+<details> 
+<summary> Clique para expandir os Desafios </summary>
 
 ### Guess Game
 
@@ -338,3 +359,29 @@ O projeto teve o objetivo de criar um timer (no estilo pomodoro), onde o usuári
         Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel05/focus-timer/index.html">aqui</a> para vê-lo no github-pages.
     </li>
 </ul>
+
+<hr>
+
+</details>
+
+<br>
+
+## Stage 06
+
+<details>
+<summary> Clique para expandir os Desafios </summary>
+
+### SPA Universe
+
+O desafio proposto envolve criação de rotas e navegação entre páginas. O projeto consiste em uma SPA (Single Page Application). O header de navegação permanece o mesmo e o conteúdo da página é alterado de acordo com a rota acessada. 
+
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel06/spa-universe/">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel06/spa-universe/index.html">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
+
+</details>
