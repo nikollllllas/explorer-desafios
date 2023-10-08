@@ -364,8 +364,6 @@ O projeto teve o objetivo de criar um timer (no estilo pomodoro), onde o usuári
 
 </details>
 
-<br>
-
 ## Stage 06
 
 <details>
