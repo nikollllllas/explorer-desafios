@@ -115,6 +115,7 @@ header div button:hover svg path {
 button {
     background-color: var(--color-bg-button);
     color: var(--color-white);
+    cursor: pointer;
 }
 
 table {
@@ -157,7 +158,6 @@ table tr:nth-child(even) {
 table tr:nth-child(odd) {
     background-color: var(--color-bg-odd-row);
 }
-
 
 td.user {
     display: flex;
