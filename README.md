@@ -382,4 +382,19 @@ O desafio proposto envolve criação de rotas e navegação entre páginas. O pr
     </li>
 </ul>
 
+<hr>
+
+### GitFavorites
+
+A aplicação GitFavorites foi desenvolvida com o objetivo de colocar em prática os conceitos de consumo de API's. A aplicação consome a API do GitHub e apresenta os repositórios favoritos do usuário. O usuário pode adicionar e remover repositórios da lista de favoritos.
+
+<ul>
+    <li>
+        Clique <a href="https://github.com/nikollllllas/explorer-desafios/tree/main/nivel06/git-fav/">aqui</a> para ver o código.
+    </li>
+    <li>
+        Clique <a href="https://nikollllllas.github.io/explorer-desafios/nivel06/git-fav/index.html">aqui</a> para vê-lo no github-pages.
+    </li>
+</ul>
+
 </details>
