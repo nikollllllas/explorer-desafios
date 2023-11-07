@@ -2,15 +2,19 @@ const { Router } = require("express")
 
 const usersRoutes = Router()
 
-usersRoutes.post("/", (req, res) => {
-  const { name, email, password } = req.body
+const UsersController = require("../controllers/UsersController") 
 
-  res.json({ 
-    name, 
-    email, 
-    password 
-  })
+function myMiddleware(req, res, next) {
+  console.log("I'm a middleware")
+  if(req.body.isAdmin) {
+    return res.json({ error: "User unauthorized" })
+  }
 
-})
+  next()
+}
+
+const usersController = new UsersController()
+
+usersRoutes.post("/", myMiddleware, usersController.create)
 
 module.exports = usersRoutes
