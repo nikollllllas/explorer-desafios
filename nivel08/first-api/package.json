@@ -10,9 +10,12 @@
   "author": "Nikollas Ohta",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.6"
   },
   "devDependencies": {
+    "express-async-errors": "^3.1.1",
     "nodemon": "^3.0.1"
   }
 }
