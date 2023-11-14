@@ -1,5 +1,5 @@
 const AppError = require("../utils/AppError")
-const { hash } = require('bcryptjs')
+const { hash, compare } = require('bcryptjs')
 
 const sqliteConnection = require('../database/sqlite')
 
@@ -51,20 +51,30 @@ class UsersControllers {
       throw new AppError("Email already registered.")
     }
 
-    user.name = name
-    user.email = email
+    user.name = name ?? user.name
+    user.email = email ?? user.email
 
-    if(password && !old_password) {`
+    if(password && !old_password) {
       throw new AppError("Old password is required.")
-      `
+    }
+
+    if(password && old_password) {
+      const checkOldPassword = await compare(old_password, user.password)
+      if(!checkOldPassword) {
+        throw new AppError("Old password does not match.")
+      }
+
+      user.password = await hash(password, 8)
     }
 
     await database.run(`
       UPDATE users SET
         name = (?),
-        email = (?)
+        email = (?),
+        password = (?),
+        updated_at = DATETIME('now')
         WHERE id = (?)
-      `, [user.name, user.email, id]) 
+      `, [user.name, user.email, user.password, id]) 
 
       return res.json(user)
   }
