@@ -75,14 +75,24 @@ class NotesController {
         .whereIn('name', filterTags)
         .innerJoin('notes', 'notes.id', 'tags.note_id')
         .orderBy('notes.title')
-      } else {
+    } else {
       notes = await knex('notes')
         .where({ user_id })
         .whereLike('title', `%${title}%`)
         .orderBy('title')
     }
 
-    return res.json({notes})
+    const userTags = await knex("tags").where({ user_id })
+    const notesWithTags = notes.map(note => {
+      const noteTags = userTags.filter(tags => tags.note_id === note.id)
+
+      return {
+        ...note,
+        tags: noteTags
+      }
+    })
+
+    return res.json({notesWithTags})
   }
 }
 
