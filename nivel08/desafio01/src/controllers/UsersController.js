@@ -1,7 +1,7 @@
 const AppError = require("../utils/AppError")
 const { hash, compare } = require('bcryptjs')
 
-const sqliteConnection = require('../database/sqlite')
+const sqliteConnection = require('../db/sqlite')
 
 class UsersControllers {
   async create(req, res) {
@@ -60,6 +60,7 @@ class UsersControllers {
 
     if(password && old_password) {
       const checkOldPassword = await compare(old_password, user.password)
+
       if(!checkOldPassword) {
         throw new AppError("Old password does not match.")
       }
