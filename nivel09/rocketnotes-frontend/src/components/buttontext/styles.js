@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.button`
   background: none;
   border: none;
-  color: ${({ theme }) => theme.COLORS.GRAY_100};
+  color: ${({ theme }) => theme.COLORS.ORANGE};
 
   font-size: 16px;
 `

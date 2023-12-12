@@ -1,13 +1,15 @@
 import { Container, Links } from './styles'
+import { Header } from '../../components/header'
 import { Button } from '../../components/button'
 import { Section } from '../../components/section'
-import { Header } from '../../components/header'
+import { ButtonText } from '../../components/buttontext'
 import { Tag } from '../../components/tag'
 
 export function Details() {
   return (
     <Container>
       <Header />
+      <ButtonText title='Excluir nota' />
       <Section title={'Links úteis'}>
         <Links>
           <li>
