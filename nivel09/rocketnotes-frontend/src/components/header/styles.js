@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.header`
   grid-area: header;
   height: 105px;
   width: 100%;
-  
+
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: ${({ theme })=> theme.COLORS.BACKGROUND_700};
+  border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 
   display: flex;
   justify-content: space-between;
@@ -32,14 +32,13 @@ export const Profile = styled.div`
     line-height: 24px;
 
     > span {
-      color: ${({ theme })=> theme.COLORS.GRAY_100};
+      color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
 
     > strong {
-      color: ${({ theme })=> theme.COLORS.WHITE};
+      color: ${({ theme }) => theme.COLORS.WHITE};
     }
   }
-
 `
 
 export const Logout = styled.button`
@@ -47,7 +46,7 @@ export const Logout = styled.button`
   border: 0;
 
   > svg {
-    color: ${({ theme })=> theme.COLORS.GRAY_100};
+    color: ${({ theme }) => theme.COLORS.GRAY_100};
     font-size: 36px;
   }
 `

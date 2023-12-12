@@ -12,6 +12,10 @@ module.exports = {
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh'],
   rules: {
+    'jsx-quotes': ['error', 'prefer-single'], 
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "semi-style": ["error", "last"],
     'react/prop-types': 'off',
     'react-refresh/only-export-components': [
       'warn',
