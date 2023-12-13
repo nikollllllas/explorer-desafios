@@ -41,7 +41,14 @@ export const Content= styled.div`
 
 export const Menu= styled.ul`
   grid-area: menu;
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
+  padding-top: 64px;
+  text-align: center;
+  
+  > li {
+    margin-bottom: 16px
+  }
 `
 
 export const NewNote= styled.button`

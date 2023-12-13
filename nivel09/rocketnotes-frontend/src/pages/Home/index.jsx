@@ -1,4 +1,5 @@
 import { Header } from '../../components/header/index.jsx'
+import { ButtonText } from '../../components/buttontext/index.jsx'
 import { Brand, Container, Content, Menu, NewNote, Search } from './styles.js'
 
 export function Home() {
@@ -11,6 +12,18 @@ export function Home() {
       <Header />
       
       <Menu>
+        <li>
+          <ButtonText title='Todos' isActive/>
+        </li>
+        <li>
+          <ButtonText title='Python' />
+        </li>
+        <li>
+          <ButtonText title='Ruby' />
+        </li>
+        <li>
+          <ButtonText title='Node' />
+        </li>
       </Menu>
 
       <Search>
