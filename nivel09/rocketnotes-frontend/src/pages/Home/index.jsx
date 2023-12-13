@@ -1,8 +1,11 @@
 import { FiPlus, FiSearch } from 'react-icons/fi'
+
+import { Note } from '../../components/Note/index.jsx'
+import { Input } from '../../components/Input/index.jsx'
 import { Header } from '../../components/Header/index.jsx'
+import { Section } from '../../components/Section/index.jsx'
 import { ButtonText } from '../../components/ButtonText/index.jsx'
 import { Brand, Container, Content, Menu, NewNote, Search } from './styles.js'
-import { Input } from '../../components/Input/index.jsx'
 
 export function Home() {
   return(
@@ -33,6 +36,34 @@ export function Home() {
       </Search>
 
       <Content>
+        <Section title={'Minhas notas'}>
+          <Note data={{
+            title: 'React',
+            tags: [
+              {
+                id:'1',
+                name: 'react'
+              },
+              {
+                id:'2',
+                name: 'javascript'
+              }]
+            }}
+            />
+            {/* <Note data={{
+            title: 'Node',
+            tags: [
+              {
+                id:'4',
+                name: 'react'
+              },
+              {
+                id:'5',
+                name: 'javascript'
+              }]
+            }}
+            /> */}
+        </Section>
       </Content>
 
       <NewNote>
