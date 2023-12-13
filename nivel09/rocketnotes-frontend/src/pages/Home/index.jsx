@@ -1,5 +1,6 @@
-import { Header } from '../../components/header/index.jsx'
-import { ButtonText } from '../../components/buttontext/index.jsx'
+import { FiPlus } from 'react-icons/fi'
+import { Header } from '../../components/Header/index.jsx'
+import { ButtonText } from '../../components/ButtonText/index.jsx'
 import { Brand, Container, Content, Menu, NewNote, Search } from './styles.js'
 
 export function Home() {
@@ -13,7 +14,7 @@ export function Home() {
       
       <Menu>
         <li>
-          <ButtonText title='Todos' isActive/>
+          <ButtonText title='Todos' $isactive/>
         </li>
         <li>
           <ButtonText title='Python' />
@@ -34,6 +35,8 @@ export function Home() {
       </Content>
 
       <NewNote>
+        <FiPlus />
+        Criar nota
       </NewNote>
     </Container>
   )
