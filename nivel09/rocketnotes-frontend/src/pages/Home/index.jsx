@@ -50,23 +50,10 @@ export function Home() {
               }]
             }}
             />
-            {/* <Note data={{
-            title: 'Node',
-            tags: [
-              {
-                id:'4',
-                name: 'react'
-              },
-              {
-                id:'5',
-                name: 'javascript'
-              }]
-            }}
-            /> */}
         </Section>
       </Content>
 
-      <NewNote>
+      <NewNote to='/new'>
         <FiPlus />
         Criar nota
       </NewNote>

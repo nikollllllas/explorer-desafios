@@ -4,7 +4,7 @@ import { Container, Logout, Profile } from './styles'
 export function Header() {
   return (
     <Container>
-      <Profile>
+      <Profile to='/profile'>
         <img src='https://github.com/nikollllllas.png' alt='Nikollas photo' />
         <div>
           <span>Bem vindo, </span>
