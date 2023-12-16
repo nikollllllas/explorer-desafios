@@ -1,3 +1,4 @@
+const { compare } = require('bcryptjs')
 const knex = require('../database/knex')
 const AppError = require('../utils/AppError')
 
@@ -7,7 +8,13 @@ class SessionsController {
 
     const user = await knex('users').where({ email }).first()
 
+    const passwordMatched = await compare(password, user.password)
+    
     if (!user) {
+      throw new AppError('Incorrect email/password combination.', 401)
+    }
+
+    if (!passwordMatched) {
       throw new AppError('Incorrect email/password combination.', 401)
     }
 
