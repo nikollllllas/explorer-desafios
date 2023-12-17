@@ -3,7 +3,7 @@ const AppError = require('../utils/AppError')
 const authConfig = require('../configs/auth')
 
 function ensureAuthenticated(req, res, next) {
-  const authHeader = req.headers.autorization
+  const authHeader = req.headers.authorization
 
   if (!authHeader) {
     throw new AppError('JWT token is missing.', 401)
