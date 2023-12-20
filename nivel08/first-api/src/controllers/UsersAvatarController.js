@@ -4,7 +4,7 @@ const DiskStorage = require('../providers/DiskStorage')
 
 class UserAvatarController {
   async update(req, res) {
-    const user_id = req.user
+    const user_id = req.user.id
     const avatarFilename = req.file.filename
     
     const diskStorage = new DiskStorage()
