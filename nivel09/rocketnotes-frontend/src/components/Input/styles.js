@@ -10,17 +10,17 @@ export const Container = styled.div`
 
   margin-bottom: 8px;
   border-radius: 10px;
-  
+
   > input {
     height: 56px;
     width: 100%;
     padding: 12px;
-    
+
     border: none;
     color: ${({ theme }) => theme.COLORS.WHITE};
     background-color: transparent;
 
-    &:placeholder{
+    &:placeholder {
       color: ${({ theme }) => theme.COLORS.GREY_300};
     }
   }

@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-
 export const Brand = styled.div`
   grid-area: brand;
 
@@ -20,10 +19,10 @@ export const Brand = styled.div`
   }
 `
 
-export const Container= styled.div`
+export const Container = styled.div`
   width: 100%;
   height: 100vh;
- 
+
   display: grid;
   grid-template-columns: 250px auto;
   grid-template-rows: 105px 128px auto 64px;
@@ -36,26 +35,25 @@ export const Container= styled.div`
   background: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 `
 
-export const Content= styled.div`
+export const Content = styled.div`
   grid-area: content;
   padding: 0 64px;
   overflow-y: scroll;
-
 `
 
-export const Menu= styled.ul`
+export const Menu = styled.ul`
   grid-area: menu;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
   padding-top: 64px;
   text-align: center;
-  
+
   > li {
-    margin-bottom: 16px
+    margin-bottom: 16px;
   }
 `
 
-export const NewNote= styled(Link)`
+export const NewNote = styled(Link)`
   grid-area: newnote;
 
   background-color: ${({ theme }) => theme.COLORS.ORANGE};
@@ -68,11 +66,9 @@ export const NewNote= styled(Link)`
   svg {
     margin-right: 8px;
   }
-
 `
 
-export const Search= styled.div`
+export const Search = styled.div`
   grid-area: search;
-  padding: 64px 64px 0
-
+  padding: 64px 64px 0;
 `

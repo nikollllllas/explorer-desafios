@@ -1,17 +1,16 @@
 import styled from 'styled-components'
 
 export const Avatar = styled.div`
-  
   position: relative;
   margin: -124px auto 32px;
 
   width: 186px;
   height: 186px;
-  
+
   > img {
     width: 186px;
-  height: 186px;
-  border-radius: 50%;  
+    height: 186px;
+    border-radius: 50%;
   }
 
   > label {
@@ -31,7 +30,7 @@ export const Avatar = styled.div`
   input {
     display: none;
   }
-  
+
   > svg {
     width: 20px;
     height: 20px;
@@ -60,7 +59,7 @@ export const Container = styled.div`
 
 export const Form = styled.form`
   max-width: 340px;
-  margin:30px auto 0;
+  margin: 30px auto 0;
 
   > div:nth-child(4) {
     margin-top: 24px;

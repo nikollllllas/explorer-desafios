@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import { Header } from '../../components/Header'
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
-import { Section } from '../../components/Section'
+import { Header } from '../../components/header'
+import { Section } from '../../components/section'
 import { NoteItem } from '../../components/NoteItem'
 import { Textarea } from '../../components/Textarea'
 
@@ -20,39 +20,31 @@ export function New() {
               <Link to='/'>voltar</Link>
             </header>
 
-            <Input placeholder='Titulo'/>
+            <Input placeholder='Titulo' />
 
-            <Textarea placeholder={'Observações'}/>
+            <Textarea placeholder={'Observações'} />
 
-            <Section
-              title='Links úteis'
-              > 
-              <NoteItem 
-                value={'https://www.google.com.br'}
-                />
-              
-              <NoteItem 
+            <Section title='Links úteis'>
+              <NoteItem value={'https://www.google.com.br'} />
+
+              <NoteItem
                 value={''}
                 isNew
                 placeholder='Novo link'
-                />
+              />
             </Section>
 
             <Section title='Marcadores'>
               <div className='tags'>
-                <NoteItem
-                  value='Node'
-                  />
+                <NoteItem value='Node' />
                 <NoteItem
                   isNew
                   placeholder='Novo marcador'
-                  />
+                />
               </div>
             </Section>
 
-            <Button 
-              title={'Salvar'}
-              />
+            <Button title={'Salvar'} />
           </Form>
         </main>
       </Container>

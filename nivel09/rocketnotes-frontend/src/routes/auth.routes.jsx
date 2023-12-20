@@ -6,15 +6,15 @@ import { SignUp } from '../pages/SignUp'
 export function AuthRoutes() {
   return (
     <Routes>
-      <Route 
+      <Route
         path='/'
-         element={<SignIn />} 
-        />
-        
-      <Route 
-        path='/register' 
-        element={<SignUp />} 
-        />        
+        element={<SignIn />}
+      />
+
+      <Route
+        path='/register'
+        element={<SignUp />}
+      />
     </Routes>
   )
 }

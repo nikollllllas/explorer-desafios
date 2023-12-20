@@ -8,7 +8,6 @@ import theme from './styles/theme'
 import GlobalStyles from './styles/global'
 import { ThemeProvider } from 'styled-components'
 
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
@@ -17,5 +16,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Routes />
       </AuthProvider>
     </ThemeProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 )

@@ -5,17 +5,17 @@ import { Avatar, Container, Form } from './styles'
 
 import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from 'react-icons/fi'
 
-export function Profile() { 
+export function Profile() {
   return (
     <Container>
-      <header >
+      <header>
         <Link to='/'>
           <FiArrowLeft />
         </Link>
       </header>
       <Form>
         <Avatar>
-          <img 
+          <img
             src='https://github.com/nikollllllas.png'
             alt='Foto do Usuário'
           />
@@ -47,9 +47,7 @@ export function Profile() {
           placeholder='Nova senha'
           icon={FiLock}
         />
-        <Button 
-          title='Salvar'
-        />
+        <Button title='Salvar' />
       </Form>
     </Container>
   )

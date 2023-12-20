@@ -8,26 +8,25 @@ import { Details } from '../pages/Details'
 export function AppRoutes() {
   return (
     <Routes>
-      <Route 
+      <Route
         path='/'
-         element={<Home />} 
-        />
-        
-      <Route 
-        path='/new' 
-        element={<New />} 
-        />
-        
-      <Route 
+        element={<Home />}
+      />
+
+      <Route
+        path='/new'
+        element={<New />}
+      />
+
+      <Route
         path='/profile'
-         element={<Profile />} 
-        />
-        
-      <Route 
-        path='/details/:id' 
-        element={<Details />} 
-        />
-        
+        element={<Profile />}
+      />
+
+      <Route
+        path='/details/:id'
+        element={<Details />}
+      />
     </Routes>
   )
 }

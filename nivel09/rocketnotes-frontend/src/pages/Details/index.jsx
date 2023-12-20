@@ -1,9 +1,9 @@
 import { Container, Content, Links } from './styles'
+import { Tag } from '../../components/Tag'
+import { Button } from '../../components/Button'
 import { Header } from '../../components/header'
-import { Button } from '../../components/button'
 import { Section } from '../../components/section'
 import { ButtonText } from '../../components/buttontext'
-import { Tag } from '../../components/tag'
 
 export function Details() {
   return (
@@ -12,12 +12,18 @@ export function Details() {
       <main>
         <Content>
           <ButtonText title='Excluir nota' />
-          <h1>
-            Título da Nota
-          </h1>
+          <h1>Título da Nota</h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore non odit, enim sint, placeat excepturi quas obcaecati, ea corporis mollitia at voluptates rerum maiores! Maiores sint reiciendis ratione autem. Quos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. At aut aliquam, veritatis eos accusantium fugiat! Dolor porro deleniti eos nobis. Voluptate accusantium odio sunt quos error nihil quas libero fuga.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, eius quisquam omnis eaque inventore voluptate. Est, cupiditate eveniet amet quia corporis nostrum eum quod aspernatur sed alias molestias sapiente tempora?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore non
+            odit, enim sint, placeat excepturi quas obcaecati, ea corporis
+            mollitia at voluptates rerum maiores! Maiores sint reiciendis
+            ratione autem. Quos. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. At aut aliquam, veritatis eos accusantium fugiat!
+            Dolor porro deleniti eos nobis. Voluptate accusantium odio sunt quos
+            error nihil quas libero fuga. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Numquam, eius quisquam omnis eaque
+            inventore voluptate. Est, cupiditate eveniet amet quia corporis
+            nostrum eum quod aspernatur sed alias molestias sapiente tempora?
           </p>
           <Section title={'Links úteis'}>
             <Links>
