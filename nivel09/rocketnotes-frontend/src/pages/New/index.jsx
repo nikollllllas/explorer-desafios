@@ -14,8 +14,12 @@ export function New() {
   const [newLink, setNewLink] = useState('')
 
   function handleAddLink() {
-    setLinks(prevState => [...prevState, newLink])
+    setLinks((prevState) => [...prevState, newLink])
     setNewLink('')
+  }
+
+  function handleRemoveLink(deleted) {
+    setLinks((prevState) => prevState.filter((link, index)  => index !== deleted))
   }
 
   return (
@@ -34,15 +38,13 @@ export function New() {
             <Textarea placeholder={'Observações'} />
 
             <Section title='Links úteis'>
-              {
-                links.map((link, index) => (
+              {links.map((link, index) => (
                 <NoteItem
                   key={String(index)}
                   value={link}
-                  onClick={() => {}}
+                  onClick={() => {handleRemoveLink(index)}}
                 />
-                ))
-              }
+              ))}
               <NoteItem
                 isNew
                 value={newLink}
