@@ -18,7 +18,7 @@ export const Container = styled.div`
     background: none;
   }
 
-  .button-delete {
+  .button-remove {
     color: ${({ theme }) => theme.COLORS.RED};
   }
 

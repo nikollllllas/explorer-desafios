@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
@@ -9,6 +10,14 @@ import { Textarea } from '../../components/Textarea'
 import { Container, Form } from './styles'
 
 export function New() {
+  const [links, setLinks] = useState([])
+  const [newLink, setNewLink] = useState('')
+
+  function handleAddLink() {
+    setLinks(prevState => [...prevState, newLink])
+    setNewLink('')
+  }
+
   return (
     <>
       <Container>
@@ -25,12 +34,21 @@ export function New() {
             <Textarea placeholder={'Observações'} />
 
             <Section title='Links úteis'>
-              <NoteItem value={'https://www.google.com.br'} />
-
+              {
+                links.map((link, index) => (
+                <NoteItem
+                  key={String(index)}
+                  value={link}
+                  onClick={() => {}}
+                />
+                ))
+              }
               <NoteItem
-                value={''}
                 isNew
+                value={newLink}
                 placeholder='Novo link'
+                onChange={(e) => setNewLink(e.target.value)}
+                onClick={handleAddLink}
               />
             </Section>
 
