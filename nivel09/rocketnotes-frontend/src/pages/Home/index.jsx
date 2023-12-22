@@ -4,8 +4,8 @@ import { Brand, Container, Content, Menu, NewNote, Search } from './styles.js'
 import { api } from '../../services/api.js'
 import { Note } from '../../components/Note'
 import { Input } from '../../components/Input'
-import { Header } from '../../components/Header/index.jsx'
-import { Section } from '../../components/Section/index.jsx'
+import { Header } from '../../components/header/index.jsx' 
+import { Section } from '../../components/section/index.jsx' 
 import { ButtonText } from '../../components/ButtonText/index.jsx'
 
 export function Home() {
@@ -32,7 +32,6 @@ export function Home() {
         <li>
           <ButtonText
             title='Todos'
-            $isactive
           />
         </li>
         {tags &&
