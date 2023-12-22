@@ -11,6 +11,8 @@ import { ButtonText } from '../../components/ButtonText/index.jsx'
 export function Home() {
   const [tags, setTags] = useState([])
   const [selectedTags, setSelectedTags] = useState([])
+  const [search, setSearch] = useState('')
+  const [notes, setNotes] = useState([])
 
   function handleSelectedTags(tagName) {
     const alreadySelected = selectedTags.includes(tagName)
@@ -31,6 +33,15 @@ export function Home() {
 
     getTags()
   }, [])
+
+  useEffect(() => {
+    async function getNotes() {
+      const res = await api.get(`/notes?title=${search}&tags=${selectedTags}`)
+      setNotes(res.data)
+    }
+
+    getNotes()
+  }, [selectedTags, search])
 
   return (
     <Container>
@@ -64,26 +75,18 @@ export function Home() {
         <Input
           placeholder={'Pesquisar pelo título'}
           icon={FiSearch}
+          onChange={(e) => setSearch(e.target.value)}
         />
       </Search>
 
       <Content>
         <Section title={'Minhas notas'}>
-          <Note
-            data={{
-              title: 'React',
-              tags: [
-                {
-                  id: '1',
-                  name: 'react'
-                },
-                {
-                  id: '2',
-                  name: 'javascript'
-                }
-              ]
-            }}
-          />
+          {notes.map((note) => (
+            <Note
+              key={String(note.id)}
+              data={note}
+            />
+          ))}
         </Section>
       </Content>
 
