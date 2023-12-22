@@ -12,6 +12,8 @@ import { Container, Form } from './styles'
 export function New() {
   const [links, setLinks] = useState([])
   const [newLink, setNewLink] = useState('')
+  const [tags, setTags] = useState([])
+  const [newTag, setNewTag] = useState('')
 
   function handleAddLink() {
     setLinks((prevState) => [...prevState, newLink])
@@ -19,7 +21,14 @@ export function New() {
   }
 
   function handleRemoveLink(deleted) {
-    setLinks((prevState) => prevState.filter((link, index)  => index !== deleted))
+    setLinks((prevState) =>
+      prevState.filter((link, index) => index !== deleted)
+    )
+  }
+
+  function handleAddTag() {
+    setTags((prevState) => [...prevState, newTag])
+    setNewTag('')
   }
 
   return (
@@ -42,7 +51,9 @@ export function New() {
                 <NoteItem
                   key={String(index)}
                   value={link}
-                  onClick={() => {handleRemoveLink(index)}}
+                  onClick={() => {
+                    handleRemoveLink(index)
+                  }}
                 />
               ))}
               <NoteItem
@@ -56,10 +67,19 @@ export function New() {
 
             <Section title='Marcadores'>
               <div className='tags'>
-                <NoteItem value='Node' />
+                {tags.map((tag, index) => (
+                  <NoteItem
+                    key={String(index)}
+                    value={tag}
+                    onClick={() => { }}
+                  />
+                ))}
                 <NoteItem
                   isNew
+                  value={newTag}
                   placeholder='Novo marcador'
+                  onChange={(e) => setNewTag(e.target.value)}
+                  onClick={handleAddTag}
                 />
               </div>
             </Section>
