@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { FiPlus, FiSearch } from 'react-icons/fi'
+import { useNavigate } from 'react-router-dom'
 import { Brand, Container, Content, Menu, NewNote, Search } from './styles.js'
 import { api } from '../../services/api.js'
 import { Note } from '../../components/Note'
@@ -14,10 +15,12 @@ export function Home() {
   const [search, setSearch] = useState('')
   const [notes, setNotes] = useState([])
 
+  const navigate = useNavigate()
+
   function handleSelectedTags(tagName) {
     const alreadySelected = selectedTags.includes(tagName)
 
-    if(tagName === 'all') {
+    if (tagName === 'all') {
       return setSelectedTags([])
     }
 
@@ -27,6 +30,10 @@ export function Home() {
     } else {
       setSelectedTags((prevState) => [...prevState, tagName])
     }
+  }
+
+  function handleDetails(id) {
+    navigate(`/details/${id}`)
   }
 
   useEffect(() => {
@@ -89,6 +96,7 @@ export function Home() {
             <Note
               key={String(note.id)}
               data={note}
+              onClick={() => handleDetails(note.id)}
             />
           ))}
         </Section>
