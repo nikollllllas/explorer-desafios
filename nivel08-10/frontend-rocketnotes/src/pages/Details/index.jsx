@@ -1,50 +1,73 @@
 import { Container, Content, Links } from './styles'
+import { useEffect, useState } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
+import { api } from '../../services/api'
 import { Tag } from '../../components/Tag'
 import { Button } from '../../components/Button'
 import { Header } from '../../components/header'
 import { Section } from '../../components/section'
-import { ButtonText } from '../../components/buttontext'
+import { ButtonText } from '../../components/ButtonText'
 
 export function Details() {
+  const [data, setData] = useState(null)
+  const params = useParams()
+  const navigate = useNavigate()
+
+  function handleBack() {
+    navigate('/')
+  }
+
+  useEffect(() => {
+    async function getNote() {
+      const res = await api.get(`/notes/${params.id}`)
+      setData(res.data)
+    }
+
+    getNote()
+  }, [])
+
   return (
     <Container>
       <Header />
-      <main>
-        <Content>
-          <ButtonText title='Excluir nota' />
-          <h1>Título da Nota</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore non
-            odit, enim sint, placeat excepturi quas obcaecati, ea corporis
-            mollitia at voluptates rerum maiores! Maiores sint reiciendis
-            ratione autem. Quos. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. At aut aliquam, veritatis eos accusantium fugiat!
-            Dolor porro deleniti eos nobis. Voluptate accusantium odio sunt quos
-            error nihil quas libero fuga. Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Numquam, eius quisquam omnis eaque
-            inventore voluptate. Est, cupiditate eveniet amet quia corporis
-            nostrum eum quod aspernatur sed alias molestias sapiente tempora?
-          </p>
-          <Section title={'Links úteis'}>
-            <Links>
-              <li>
-                <a href='#'>Link 1</a>
-              </li>
-              <li>
-                <a href='#'>Link 2</a>
-              </li>
-              <li>
-                <a href='#'>Link 3</a>
-              </li>
-            </Links>
-          </Section>
-          <Section title={'Tags'}>
-            <Tag title={'Node'} />
-            <Tag title={'Express'} />
-          </Section>
-          <Button title='Voltar' />
-        </Content>
-      </main>
+      {data && (
+        <main>
+          <Content>
+            <ButtonText title='Excluir nota' />
+            <h1>{data.title}</h1>
+            <p>{data.description}</p>
+            {data.links && (
+              <Section title={'Links úteis'}>
+                <Links>
+                  {data.links.map((link) => (
+                    <li key={String(link.id)}>
+                      <a
+                        href={link.url}
+                        target='_blank'
+                        rel='noreferrer'>
+                        {link.url}
+                      </a>
+                    </li>
+                  ))}
+                </Links>
+              </Section>
+            )}
+            {data.tags && (
+              <Section title={'Tags'}>
+                {data.links.map((tag) => (
+                  <Tag
+                    key={String(tag.id)}
+                    title={tag.name}
+                  />
+                ))}
+              </Section>
+            )}
+            <Button
+              title='Voltar'
+              onClick={handleBack}
+            />
+          </Content>
+        </main>
+      )}
     </Container>
   )
 }
