@@ -65,7 +65,7 @@ export function Details() {
             )}
             {data.tags && (
               <Section title={'Tags'}>
-                {data.links.map((tag) => (
+                {data.tags.map((tag) => (
                   <Tag
                     key={String(tag.id)}
                     title={tag.name}
