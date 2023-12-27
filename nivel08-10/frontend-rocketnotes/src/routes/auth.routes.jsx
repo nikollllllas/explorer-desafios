@@ -1,9 +1,11 @@
-import { Routes, Route } from 'react-router-dom'
+import { Navigate, Routes, Route } from 'react-router-dom'
 
 import { SignIn } from '../pages/SignIn'
 import { SignUp } from '../pages/SignUp'
 
 export function AuthRoutes() {
+  const user = localStorage.getItem('@rocketnotes:user')
+
   return (
     <Routes>
       <Route
@@ -15,6 +17,13 @@ export function AuthRoutes() {
         path='/register'
         element={<SignUp />}
       />
+
+      {!user && 
+        <Route
+          path='*'
+          element={<Navigate to={'/'} />}
+        />
+      }
     </Routes>
   )
 }
