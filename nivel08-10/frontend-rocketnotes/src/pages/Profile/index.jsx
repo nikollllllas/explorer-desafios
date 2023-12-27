@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { api } from '../../services/api'
 import { useAuth } from '../../hooks/auth'
 import { Input } from '../../components/Input'
@@ -15,6 +15,12 @@ export function Profile() {
   const [email, setEmail] = useState(user.email)
   const [oldPassword, setOldPassword] = useState()
   const [newPassword, setNewPassword] = useState()
+
+  const navigate = useNavigate()
+
+  function handleBack() {
+    navigate(-1)
+  }
 
   const avatarUrl = user.avatar
     ? `${api.defaults.baseURL}/files/${user.avatar}`
@@ -44,9 +50,11 @@ export function Profile() {
   return (
     <Container>
       <header>
-        <Link to='/'>
+        <button
+          type='button'
+          onClick={handleBack}>
           <FiArrowLeft />
-        </Link>
+        </button>
       </header>
       <Form>
         <Avatar>
