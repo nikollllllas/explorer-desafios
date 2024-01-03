@@ -1,82 +1,86 @@
-const AppError = require("../utils/AppError")
+const AppError = require('../utils/AppError')
 const { hash, compare } = require('bcryptjs')
 
+const UserRepository = require('../repositories/UserRepository')
 const sqliteConnection = require('../database/sqlite')
 
 class UsersControllers {
   async create(req, res) {
     const { name, email, password } = req.body
 
-    const database = await sqliteConnection()
+    const userRepository = new UserRepository()
 
-    const userAlreadyExists = await database.get(`
-      SELECT * FROM users
-      WHERE email = (?)
-    `, [email])
+    const checkUserExists = await userRepository.findByEmail(email)
 
-    if(userAlreadyExists) {
-      throw new AppError("Email already registered")
+    if (checkUserExists) {
+      throw new AppError('Email already registered')
     }
 
     const hashedPassword = await hash(password, 8)
 
-    await database.run(`
-      INSERT INTO users (name, email, password)
-      VALUES (?, ?, ?)
-    `, [name, email, hashedPassword])
+    await userRepository.create({ name, email, password: hashedPassword })
 
     return res.status(201).json()
   }
 
   async update(req, res) {
-    const { name, email, password, old_password} = req.body
+    const { name, email, password, old_password } = req.body
     const user_id = req.user.id
 
     const database = await sqliteConnection()
-    const user = await database.get(`
+    const user = await database.get(
+      `
       SELECT * FROM users
       WHERE id = (?)
-    `, [user_id])
+    `,
+      [user_id]
+    )
 
-    if(!user) {
-      throw new AppError("User not found. :(")
+    if (!user) {
+      throw new AppError('User not found. :(')
     }
 
-    const userWithUpdatedEmail = await database.get(`
+    const userWithUpdatedEmail = await database.get(
+      `
       SELECT * FROM users
       WHERE email = (?)
-    `, [email])
+    `,
+      [email]
+    )
 
-    if(userWithUpdatedEmail && userWithUpdatedEmail.id !== user.id) {
-      throw new AppError("Email already registered.")
+    if (userWithUpdatedEmail && userWithUpdatedEmail.id !== user.id) {
+      throw new AppError('Email already registered.')
     }
 
     user.name = name ?? user.name
     user.email = email ?? user.email
 
-    if(password && !old_password) {
-      throw new AppError("Old password is required.")
+    if (password && !old_password) {
+      throw new AppError('Old password is required.')
     }
 
-    if(password && old_password) {
+    if (password && old_password) {
       const checkOldPassword = await compare(old_password, user.password)
-      if(!checkOldPassword) {
-        throw new AppError("Old password does not match.")
+      if (!checkOldPassword) {
+        throw new AppError('Old password does not match.')
       }
 
       user.password = await hash(password, 8)
     }
 
-    await database.run(`
+    await database.run(
+      `
       UPDATE users SET
         name = (?),
         email = (?),
         password = (?),
         updated_at = DATETIME('now')
         WHERE id = (?)
-      `, [user.name, user.email, user.password, user_id]) 
+      `,
+      [user.name, user.email, user.password, user_id]
+    )
 
-      return res.json(user)
+    return res.json(user)
   }
 }
 
