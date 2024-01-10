@@ -1,4 +1,5 @@
 const UserRepositoryInMemory = require('../repositories/UserRepositoryInMemory')
+const AppError = require('../utils/AppError')
 const UserCreateService = require('./UserCreateService')
 
 describe('UserCreateService', () => {
@@ -16,5 +17,27 @@ describe('UserCreateService', () => {
     console.log(userCreated)
 
     expect(userCreated).toHaveProperty('id')
+  })
+
+  it('should not be able to create a new user with an email already registered', async () => {
+    const user1 = {
+      name: 'User Test One',
+      email: 'test@email.com',
+      password: '123321'
+    }
+
+    const user2 = {
+      name: 'User Test Two',
+      email: 'test@email.com',
+      password: '321123'
+    }
+
+    const userRepository = new UserRepositoryInMemory()
+    const userCreateService = new UserCreateService(userRepository)
+
+    await userCreateService.execute(user1)
+    expect(async () => {
+      await userCreateService.execute(user2)
+    }).rejects.toEqual(new AppError('Email already registered'))
   })
 })
